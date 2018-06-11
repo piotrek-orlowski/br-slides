@@ -11,7 +11,7 @@
 
 
 
-<!-- <link rel="stylesheet" href="sofie-2018-25min_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme"> -->
+<link rel="stylesheet" href="sofie-2018-25min_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
 
 
   <!-- some tweaks to reveal css -->
@@ -509,7 +509,7 @@ Swiss Finance Institute
 <ul>
 <li>Dynamic option trading</li>
 <li>Fully non-parametric investigation of jump skew pricing</li>
-<li>Disaggregation of results over arbitrary time periods.d</li>
+<li>Disaggregation of results over arbitrary time periods.</li>
 </ul>
 <h3 id="pricing-of-jump-skew-risk">Pricing of <strong>jump skew</strong> risk:</h3>
 <ul>
@@ -528,7 +528,7 @@ Swiss Finance Institute
 <h2 id="motivation" class="bold thirty-from-top">Motivation</h2>
 <h2 id="measurement-of-jump-skew-risk">Measurement of jump skew risk</h2>
 <h2 id="price-and-premium-for-jump-skew-risk">Price and premium for jump skew risk</h2>
-<h2 id="empirical-results-trading-jumps-kew-risk">Empirical results: trading jumps kew risk</h2>
+<h2 id="empirical-results-trading-jump-skew-risk">Empirical results: trading jump skew risk</h2>
 </section>
 <section id="motivation-theoretical" class="slide level1">
 <h1>Motivation – theoretical</h1>
@@ -626,7 +626,7 @@ Swiss Finance Institute
 <h2 id="motivation-1" class="thirty-from-top">Motivation</h2>
 <h2 id="measurement-of-jump-skew-risk-1" class="bold">Measurement of jump skew risk</h2>
 <h2 id="price-and-premium-for-jump-skew-risk-1">Price and premium for jump skew risk</h2>
-<h2 id="empirical-results-trading-jumps-kew-risk-1">Empirical results: trading jumps kew risk</h2>
+<h2 id="empirical-results-trading-jumps-kew-risk">Empirical results: trading jumps kew risk</h2>
 </section>
 <section id="measurement-of-jump-skewness" class="slide level1">
 <h1>Measurement of jump skewness</h1>
@@ -636,11 +636,11 @@ Swiss Finance Institute
 \]</span></p>
 <h3 id="focus-on-skew-of-jumps-in-log-returns">Focus on skew of jumps in log-returns:</h3>
 <p><span class="math display">\[
-  \int_{\mathbb{R}\setminus \{0\}} x^3 + O(x^4) \, \nu_t(dx,dt)
+  \int_t^T \int_{\mathbb{R}\setminus \{0\}} \left( x^3 + O(x^4) \right) \, \nu_s(dx,ds)
 \]</span></p>
 <h3 id="use-divergence-based-measures" class="bold red">Use divergence-based measures</h3>
 <ul>
-<li>Family of realized variation measures defined in <span class="citation" data-cites="Schneider2013">Schneider and Trojani (2015)</span></li>
+<li>Family of realized variation measures defined in <span class="citation" data-cites="Schneider2013">Schneider and Trojani (2015)</span>,</li>
 <li>Statistical inference for divergence in <span class="citation" data-cites="khajavi2015realized">Khajavi (2017)</span>.</li>
 </ul>
 <h3 id="few-assumptions" class="green bold">Few assumptions</h3>
@@ -650,19 +650,27 @@ Swiss Finance Institute
 </section>
 <section id="measurement-of-jump-skewness-1" class="slide level1">
 <h1>Measurement of jump skewness</h1>
-<h3 id="vix2-skew" class="bold green">VIX<sup>2</sup>-skew:</h3>
+<h3 id="realized-divergence-for-p0" class="bold purple">Realized divergence for <span class="math inline">\(p=0\)</span>:</h3>
 <ul>
-<li>built around VIX<sup>2</sup> variance swap / realized entropy</li>
-<li>slope of divergence at <span class="math inline">\(p=0\)</span></li>
-<li>sensitivity of VIX<sup>2</sup> to 3<sup>rd</sup> moment.</li>
+<li>realized divergence (<span class="math inline">\(p\)</span>) <span class="math inline">\(\approx\)</span> 1/2 realized variance (<span class="math inline">\(\color{red}{=}\)</span> if no jumps) + <span class="math inline">\(f(p)\times\)</span> jumps</li>
+<li>consider VIX index; VIX<sup>2</sup>: price of <span class="citation" data-cites="itakura1968analysis">Itakura and Saito (1968)</span> divergence</li>
+<li>VIX<sup>2</sup>-based <em>variance swap</em>.</li>
 </ul>
-<h3 id="define-log-return">Define log return:</h3>
+<p style="padding-top: 0px">
+</p>
+<h3 id="realized-jump-skew" class="bold green">Realized jump skew:</h3>
+<ul>
+<li>sensitivity of realized divergence to choice of <span class="math inline">\(p\)</span>.</li>
+</ul>
+<p style="padding-top: 0px">
+</p>
+<h3 id="take-log-return">Take log return:</h3>
 <p><span class="math display">\[
 r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 \]</span></p>
 <h3 id="jump-skew-variation" class="red bold">Jump skew variation:</h3>
 <p><span class="math display">\[
-  S_{t,T} := \sum_{i=1}^N e^{r_i}-1 -\frac{r_i^2}{2} - r_i \overset{\mathbb{P}}{\longrightarrow} \sum_{t \leq s \leq T} \frac{1}{6} \left(\Delta J_s\right)^3 + O(J_s)^4
+  S_{t,T} := \sum_{i=1}^N \left( e^{r_i}-1 -\frac{r_i^2}{2} - r_i  \right) \overset{\mathbb{P}}{\longrightarrow} \sum_{t \leq s \leq T} \frac{1}{6} \left(\Delta J_s\right)^3 + O(J_s)^4
 \]</span></p>
 </section>
 <section id="section-3" class="slide level1">
@@ -670,7 +678,7 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 <h2 id="motivation-2" class="thirty-from-top">Motivation</h2>
 <h2 id="measurement-of-jump-skew-risk-2">Measurement of jump skew risk</h2>
 <h2 id="price-and-premium-for-jump-skew-risk-2" class="bold">Price and premium for jump skew risk</h2>
-<h2 id="empirical-results-trading-jumps-kew-risk-2">Empirical results: trading jumps kew risk</h2>
+<h2 id="empirical-results-trading-jumps-kew-risk-1">Empirical results: trading jumps kew risk</h2>
 </section>
 <section id="central-question-trading-strategy" class="slide level1">
 <h1>Central question: trading strategy</h1>
@@ -681,11 +689,11 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 <h3 id="index-option-market" class="bold">Index option market:</h3>
 <ul>
 <li>sparse maturities</li>
-<li>continuum of strikes.</li>
+<li>near continuum of strikes.</li>
 </ul>
 <h3 id="non-linear-trading" class="bold green">Non-linear trading:</h3>
-<p>Exposure to divergence of function of forward price <span class="math inline">\(\phi(F_T)\)</span> available through <span class="citation" data-cites="Breeden1978">Breeden and Litzenberger (1978)</span> and <span class="citation" data-cites="Carr2001">Carr and Madan (2001)</span>: <span class="math display">\[
-  D_{\phi}(F_T,F_t) := \phi(F_T) - \phi(F_t) - \phi&#39;(F_t)(F_T- F_t) = \int_0^{\infty} \phi&#39;&#39;(K) O(F_T; K, F_t) dK
+<p>Exposure to divergence of function of forward price <span class="math inline">\(\color{green}{\phi}(F_T)\)</span> available through <span class="citation" data-cites="Breeden1978">Breeden and Litzenberger (1978)</span> and <span class="citation" data-cites="Carr2001">Carr and Madan (2001)</span>: <span class="math display">\[
+  D_{\color{green}{\phi}}(F_T,F_t) := \color{green}{\phi}(F_T) \color{black}- \color{green}{\phi}(F_t)  \color{black}- \color{green}{\phi}&#39;(F_t)\color{black}(F_T- F_t) = \int_0^{\infty} \color{green}{\phi}&#39;&#39;(K) \color{red}{O(F_T; K, F_t)} \color{black}dK
 \]</span></p>
 <h3 id="existing-literature-semi-static-strategies">Existing literature: semi-static strategies</h3>
 <p><span class="math display">\[
@@ -698,7 +706,7 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 <h1>Trading strategy</h1>
 <h3 id="express-s_tt-as-sum-of-weighted-divergences-between-f_t_i-and-f_t" class="bold red">Express <span class="math inline">\(S_{t,T}\)</span> as sum of weighted divergences between <span class="math inline">\(F_{t_i}\)</span> and <span class="math inline">\(F_T\)</span>:</h3>
 <p><span class="math display">\[
-  S_{t,T} =  \underbrace{\phi_s(F_T,F_{0})}_{\color{green}{\bigstar}} + \sum_i \underbrace{\gamma_{i}\phi_v(F_T,F_i)}_{\color{purple}{\bigstar}} + \underbrace{\delta_i (F_T - F_i)}_{\color{orange}{\bigstar}}.
+  S_{t,T}= \sum_{i=1}^N \left( e^{r_i}-1 -\frac{r_i^2}{2} - r_i \right) =  \underbrace{\phi_s(F_T,F_{0})}_{\color{green}{\bigstar}} + \sum_i \underbrace{\gamma_{i}\phi_v(F_T,F_i)}_{\color{purple}{\bigstar}} + \underbrace{\delta_i (F_T - F_i)}_{\color{orange}{\bigstar}}.
 \]</span></p>
 <p style="text-align: center;">
 <span class="math inline">\(\color{green}{\bigstar}\)</span> at time <span class="math inline">\(t_0\)</span> buy a <strong>skewness swap</strong>
@@ -712,27 +720,27 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 <h1>Jump skew premium</h1>
 <h4 id="semi-static-strategies-e.g.variance-swaps" class="bold purple">Semi-static strategies (e.g. variance swaps):</h4>
 <ul>
-<li>floating leg — realized variation measure <span class="math inline">\(\equiv\)</span> fwd + option settlement</li>
+<li>floating leg — realized variation measure <span class="math inline">\(\equiv\)</span> fwd + option settlement,</li>
 <li>fixed leg — <span style="color: purple">swap rate</span> — <span class="math inline">\(\mathbb{E}^{\mathbb{Q}_T}_t[\phi(F_T) - \phi(F_t)]\)</span>.</li>
 </ul>
 <h4 id="dynamic-strategies" class="bold green">Dynamic strategies:</h4>
 <ul>
-<li>replicating leg — <span style="color: green">weight <span style="font-weight: bold">integrated</span> wrt <span class="math inline">\(\Delta\)</span> SR </span>— <span class="math inline">\(\int_t^T \gamma_s d \mathbb{E}^{\mathbb{Q}_T}_s[\phi(F_T) - \phi(F_s)]\)</span></li>
+<li>replicating leg — <span style="color: green">weight <span style="font-weight: bold">integrated</span> wrt <span class="math inline">\(\Delta\)</span> SR </span>— <span class="math inline">\(\int_t^T \color{orange} \gamma_s \color{black} d \color{blue}\mathbb{E}^{\mathbb{Q}_T}_s[\phi(F_T) - \phi(F_s)]\)</span>,</li>
 <li>replication cost now known at <span class="math inline">\(t\)</span>: option rebalancing comes into play.</li>
 </ul>
 <h3 id="jump-skew-premium-1" class="bold red">Jump skew premium</h3>
 <p>With MGF of log-return <span class="math inline">\(\varphi_t(p,\tau- t) \equiv \mathbb{E}_t^{\mathbb{Q}}\left[ e^{p\log{F_{\tau}/F_t}} \right]\)</span>: <span class="math display">\[
-  \mathbb{E}^{\mathbb{P}}_t[S_{t,T}] - \left[\underbrace{-\frac{1}{2}\varphi&#39;&#39;_t(0,T - t) - \varphi&#39;_t(0, T - t)}_{\color{green}{\bigstar}} - \underbrace{\int_t^{T} \log{\frac{F_s}{F_t}} d \varphi&#39;_s(0,T - s)}_{\color{purple}{\bigstar}}\right]
+  \mathbb{E}^{\mathbb{P}}_t[S_{t,T}] - \left[\underbrace{-\frac{1}{2}\varphi&#39;&#39;_t(0,T - t) - \varphi&#39;_t(0, T - t)}_{\color{green}{\bigstar}} - \underbrace{\int_t^{T} \color{orange}\log{\frac{F_s}{F_t}}\color{black} d \color{blue} \varphi&#39;_s(0,T - s)}_{\color{purple}{\bigstar}}\right]
 \]</span></p>
 <p>Hedging exposure to jump skewness exposes trader to volatility/skewness <span style="color: red"><strong>drivers</strong></span>.</p>
 </section>
 <section id="jump-skew-premium-2" class="slide level1">
 <h1>Jump skew premium</h1>
 <p><span class="math display">\[
-  \mathbb{E}^{\mathbb{P}}_t[S_{t,T}] - \left[\underbrace{-\frac{1}{2}\varphi&#39;&#39;_t(0,T - t) - \varphi&#39;_t(0, T - t)}_{\color{green}{\bigstar}} - \underbrace{\int_t^{T} \log{\frac{F_s}{F_t}} d \varphi&#39;_s(0,T - s)}_{\color{purple}{\bigstar}}\right]
+  \mathbb{E}^{\mathbb{P}}_t[S_{t,T}] - \left[\underbrace{-\frac{1}{2}\varphi&#39;&#39;_t(0,T - t) - \varphi&#39;_t(0, T - t)}_{\color{green}{\bigstar}} - \underbrace{\int_t^{T} \color{orange} \log{\frac{F_s}{F_t}}\color{black}  d \color{blue}\varphi&#39;_s(0,T - s)}_{\color{purple}{\bigstar}}\right]
 \]</span></p>
-<h3 id="colorpurplebigstar--varphi_s0t---s-price-of-variance-swap"><span class="math inline">\(\color{purple}{\bigstar}\)</span> <span class="math inline">\(-\varphi&#39;_s(0,T - s)\)</span> — price of variance swap</h3>
-<h3 id="colorpurplebigstar-logf_sf_t-position-in-variance-swap."><span class="math inline">\(\color{purple}{\bigstar}\)</span> <span class="math inline">\(\log{{F_s}/{F_t}}\)</span> — position in variance swap.</h3>
+<h3 id="colorpurplebigstar-colorblue--varphi_s0t---s-price-of-variance-swap"><span class="math inline">\(\color{purple}{\bigstar}\)</span> <span class="math inline">\(\color{blue} -\varphi&#39;_s(0,T - s)\)</span> — price of variance swap</h3>
+<h3 id="colorpurplebigstar-colororange-logf_sf_t-position-in-variance-swap."><span class="math inline">\(\color{purple}{\bigstar}\)</span> <span class="math inline">\(\color{orange} \log{{F_s}/{F_t}}\)</span> — position in variance swap.</h3>
 <h3 id="if-we-could-trade-forwards-on-vs-this-term-would-have-mathbbq_t-expectation-0." class="bold purple">If we could trade forwards on VS: this term would have <span class="math inline">\(\mathbb{Q}_T\)</span>-expectation 0.</h3>
 <h3 id="we-cant.">We can’t.</h3>
 <h3 id="option-portfolio-rebalancing-exposes-investors-to-state-variable-risk." class="red bold">Option portfolio rebalancing exposes investors to state variable risk.</h3>
@@ -742,10 +750,10 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 <h2 id="motivation-3" class="thirty-from-top">Motivation</h2>
 <h2 id="measurement-of-jump-skew-risk-3">Measurement of jump skew risk</h2>
 <h2 id="price-and-premium-for-jump-skew-risk-3">Price and premium for jump skew risk</h2>
-<h2 id="empirical-results-trading-jump-skew-risk" class="bold">Empirical results: trading jump skew risk</h2>
+<h2 id="empirical-results-trading-jump-skew-risk-1" class="bold">Empirical results: trading jump skew risk</h2>
 </section>
-<section id="cboe-weeklys" class="slide level1">
-<h1>CBOE Weeklys</h1>
+<section id="cboe-spx-weeklys" class="slide level1">
+<h1>CBOE SPX Weeklys</h1>
 <p><img src="sofie-2018-25min_files/figure-revealjs/tradingActivity-1.png" width="864" /></p>
 <p>Weeklys:</p>
 <ul>
@@ -843,10 +851,12 @@ weekly
 <p style="font-size: 0.5em; padding-top: 0px; margin-top: 0px">
 Daytime and overnight variation scaled by 5 (days).
 </p>
-<p>Values of jump skew payoff at option and forward settlement</p>
-<p>Average jump skew variation is 0 over all periods.</p>
-<p>Positive and negative jumps wash away.</p>
-<p>Consistent with findings in the literaure.</p>
+<ul>
+<li>Values of jump skew payoff at option and forward settlement.</li>
+<li>Average jump skew variation is 0 over all periods.</li>
+<li>Positive and negative jumps wash away.</li>
+<li>Consistent with findings in the literaure.</li>
+</ul>
 <!-- calcs for overnight/conditional bootstrap -->
 </section>
 <section id="trading-jump-skew-profits" class="slide level1">
@@ -1239,6 +1249,9 @@ no rebalancing
 </div>
 <div id="ref-harvey2002skewness">
 <p>Harvey, Campbell R., and Akhtar Siddique. 2002. “Conditional Skewness in Asset Pricing Tests.” <em>The Journal of Finance</em> 55 (3): 1263–95. doi:<a href="https://doi.org/10.1111/0022-1082.00247">10.1111/0022-1082.00247</a>.</p>
+</div>
+<div id="ref-itakura1968analysis">
+<p>Itakura, F., and S. Saito. 1968. “Analysis Synthesis Telephony Based on the Maximum Likelihood Method.” In <em>Proceedings of the 6th International Congress on Acoustics</em>, 17:C17–C20. IEEE.</p>
 </div>
 <div id="ref-kelly2014tail">
 <p>Kelly, Bryan, and Hao Jiang. 2014. “Tail risk and asset prices.” <em>Review of Financial Studies</em> 27 (10): 2841–71. doi:<a href="https://doi.org/10.1093/rfs/hhu039">10.1093/rfs/hhu039</a>.</p>
