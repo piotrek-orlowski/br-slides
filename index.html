@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title></title>
+  <title>fma-derivs-2019-30min.utf8.md</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="sofie-2018-25min_files/reveal.js-3.3.0.1/css/reveal.css"/>
+  <link rel="stylesheet" href="fma-derivs-2019-30min_files/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
 
-<link rel="stylesheet" href="sofie-2018-25min_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="fma-derivs-2019-30min_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
 
 
   <!-- some tweaks to reveal css -->
@@ -59,7 +59,7 @@
 
     <style type="text/css">code{white-space: pre;}</style>
 
-    <link rel="stylesheet" href="css\reveal.css"/>
+    <link rel="stylesheet" href="c:\piotr\git\css\reveal.css"/>
 
 <!-- Printing and PDF exports -->
 <script id="paper-css" type="application/dynamic-css">
@@ -449,6 +449,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
       "HTML-CSS": { scale: 90, linebreaks: { automatic: true } }
     });
     </script>
+    <script src="fma-derivs-2019-30min_files/kePrint-0.0.1/kePrint.js"></script>
 </head>
 <body>
   <div class="reveal">
@@ -457,10 +458,10 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 <section id="section" class="slide level1">
 <h1></h1>
-<h1 style="margin-top: 20%; font-weight: bold; font-size: 4.0em">
-Big Risk
+<p><img src="img/Signature_carree_Web_HEC_Montreal_541.png" width="424" /></p>
+<h1 style="margin-top: 0%; font-weight: bold; font-size: 2.6em">
+On the nature of jump risk premia
 </h1>
-<p><img src="img/logo_hec_montreal.gif" style="position: absolute; right: 0%; top: 10%", height="100", width="100"></p>
 <div style="width: 100%; display: table; text-align: center; padding-top: 50px">
 <div style="display: table-row; font-weight: bold">
 <div style="width: 33.33%; display: table-cell;">
@@ -505,23 +506,28 @@ Swiss Finance Institute
 </section>
 <section id="core-results" class="slide level1">
 <h1>Core results</h1>
-<h3 id="first-model-free-strategy-that-pays-a-functional-of-the-path-of-jumps-at-settlement">First model-free strategy that pays a <strong>functional of the path of jumps</strong> at settlement</h3>
+<h3 id="pricing-of-jump-skew-risk" class="red bold">Pricing of <span style="color: black">jump skew</span> risk:</h3>
+<ul>
+<li><strong>Not present</strong> in daytime option trading
+<ul>
+<li>large literature on jumps in high-frequency returns</li>
+</ul></li>
+<li>Present when trading options around non-trading periods
+<ul>
+<li>but is it mispricing?</li>
+</ul></li>
+<li>Different from the pricing of <strong>variance risk</strong></li>
+</ul>
+<p>
+</p>
+<h3 id="model-free-strategy-that-pays-a-functional-of-the-path-of-jumps-at-settlement" class="bold red">Model-free strategy that pays a <span style="color: black">functional of the path of jumps</span> at settlement</h3>
 <ul>
 <li>Dynamic option trading</li>
 <li>Fully non-parametric investigation of jump skew pricing</li>
-<li>Disaggregation of results over arbitrary time periods.</li>
+<li>How to interpret dynamic option trading</li>
 </ul>
-<h3 id="pricing-of-jump-skew-risk">Pricing of <strong>jump skew</strong> risk:</h3>
-<ul>
-<li>Not present in daytime option trading</li>
-<li>Present in overnight option trading</li>
-<li>Persistent.</li>
-</ul>
-</section>
-<section id="core-insight" class="slide level1">
-<h1>Core insight</h1>
-<p><img src="sofie-2018-25min_files/figure-revealjs/trading-demo-1.png" width="800px" height="300px" /></p>
-<p>There exists a <strong>dynamic option trading strategy</strong> whose settlement payoff at maturity <strong>equals</strong> the cumulative <strong>jump skewness</strong> of returns.</p>
+<!-- # Core  insight -->
+<!-- There exists a **dynamic option trading strategy** whose settlement payoff at maturity **equals** the cumulative **jump skewness** of returns. -->
 </section>
 <section id="section-1" class="slide level1">
 <h1></h1>
@@ -534,7 +540,7 @@ Swiss Finance Institute
 <h1>Motivation – theoretical</h1>
 <h2 id="skewness-and-preferences" class="red bold">Skewness and preferences</h2>
 <ul>
-<li><span class="citation" data-cites="kraus1976skewness">Kraus and Litzenberger (1976)</span>, <span class="citation" data-cites="arditti1967risk">Arditti (1967)</span>
+<li><span class="citation" data-cites="Kraus1976">Kraus and Litzenberger (1976)</span>, <span class="citation" data-cites="arditti1967risk">Arditti (1967)</span>
 <ul>
 <li>positive preference for skewness for reasonable utility functions</li>
 <li>with systematic skewness: low returns for positively skewed payoffs.</li>
@@ -558,7 +564,7 @@ Swiss Finance Institute
 <ul>
 <li>systematic boom/disaster risk impacts cross-section</li>
 </ul></li>
-<li><span class="citation" data-cites="harvey2002skewness">Harvey and Siddique (2002)</span>, <span class="citation" data-cites="schneider2016low">Schneider, Wagner, and Zechner (2016)</span>
+<li><span class="citation" data-cites="harvey2002skewness">Harvey and Siddique (2002)</span>, <span class="citation" data-cites="Schneider2016a">Schneider, Wagner, and Zechner (2016)</span>
 <ul>
 <li>conditional skewness explains cross-sectional anomalies.</li>
 </ul></li>
@@ -568,7 +574,7 @@ Swiss Finance Institute
 <h1>Motivation – empirical</h1>
 <h2 id="tail-risk-neq-volatility-risk" class="red bold">Tail risk <span class="math inline">\(\neq\)</span> volatility risk</h2>
 <ul>
-<li><span class="citation" data-cites="Andersen2015a">Andersen, Todorov, and Fusari (2015)</span>, <span class="citation" data-cites="andersen2015pricing">Andersen, Todorov, and Fusari (2016)</span>
+<li><span class="citation" data-cites="Andersen2013">Andersen, Todorov, and Fusari (2015)</span>, <span class="citation" data-cites="Andersen2017">Andersen, Fusari, and Todorov (2017)</span>
 <ul>
 <li>Variation in negative jump risk not spanned by volatility</li>
 <li>Prices of OTM puts (relative to ATM) do not depend on diffusive volatility</li>
@@ -588,11 +594,11 @@ Swiss Finance Institute
 </ul>
 <h2 id="asymmetric-pricing-of-tail-risks" class="red bold">Asymmetric pricing of tail risks</h2>
 <ul>
-<li><span class="citation" data-cites="andersen2015pricing">Andersen, Todorov, and Fusari (2016)</span>:
+<li><span class="citation" data-cites="Andersen2017">Andersen, Fusari, and Todorov (2017)</span>:
 <ul>
 <li>Prices of negative jump risk can be recovered from prices of deep OTM <em>short-maturity</em> puts.</li>
 </ul></li>
-<li><span class="citation" data-cites="Andersen2015a">Andersen, Todorov, and Fusari (2015)</span>:
+<li><span class="citation" data-cites="Andersen2013">Andersen, Todorov, and Fusari (2015)</span>:
 <ul>
 <li>The premium for negative jump risk is large, persistent</li>
 <li>Little to no premium for positive jump risk.</li>
@@ -603,7 +609,7 @@ Swiss Finance Institute
 <h1>Motivation – empirical</h1>
 <h2 id="jump-risk-priced-risk" class="red bold">Jump risk <span class="math inline">\(=\)</span> priced risk?</h2>
 <ul>
-<li><span class="citation" data-cites="kelly2014tail">Kelly and Jiang (2014)</span>, <span class="citation" data-cites="Bollerslev2016">Bollerslev, Li, and Todorov (2016)</span>:
+<li><span class="citation" data-cites="Kelly2014">Kelly and Jiang (2014)</span>, <span class="citation" data-cites="Bollerslev2016">Bollerslev, Li, and Todorov (2016)</span>:
 <ul>
 <li>Jump risk (of S&amp;P500) priced in cross-section of stock returns.</li>
 <li><span class="math inline">\(\alpha = 5.4\%\)</span> p.a. wrt FF3.</li>
@@ -615,10 +621,33 @@ Swiss Finance Institute
 </ul>
 <h2 id="other-important-facts" class="red bold">Other important facts</h2>
 <ul>
-<li><span class="citation" data-cites="bollerslev2015tail">Bollerslev, Todorov, and Xu (2015)</span>, <span class="citation" data-cites="kelly2014tail">Kelly and Jiang (2014)</span>:
+<li><span class="citation" data-cites="bollerslev2015tail">Bollerslev, Todorov, and Xu (2015)</span>, <span class="citation" data-cites="Kelly2014">Kelly and Jiang (2014)</span>:
 <ul>
 <li>Price of jump risk predicts S&amp;P500 returns.</li>
 </ul></li>
+</ul>
+</section>
+<section id="agenda" class="slide level1">
+<h1>Agenda</h1>
+<h2 id="is-there-a-premium-for-the-risk-of-jumps-in-high-frequency-returns" class="bold purple">Is there a premium for the risk of jumps in high-frequency returns?</h2>
+<ul>
+<li>examine continuous trading during market hours
+<ul>
+<li>this replicates the dominant modeling setup</li>
+</ul></li>
+</ul>
+<p>
+<br>
+</p>
+<h2 id="where-do-option-implied-jump-premia-come-from" class="bold purple">Where do option-implied jump premia come from?</h2>
+<ul>
+<li>examine profits around non-trading periods
+<ul>
+<li>no continuous option trading</li>
+<li>but continuous futures trading</li>
+<li>no more pure jump interpretation</li>
+</ul></li>
+<li>aversion to hedging restrictions or mispricing?</li>
 </ul>
 </section>
 <section id="section-2" class="slide level1">
@@ -630,7 +659,7 @@ Swiss Finance Institute
 </section>
 <section id="measurement-of-jump-skewness" class="slide level1">
 <h1>Measurement of jump skewness</h1>
-<h3 id="consider-a-semi-martingale-forward-price-process">Consider a semi-martingale forward price process:</h3>
+<h3 id="consider-a-semi-martingale-forward-price-process-finite-activity-jumps">Consider a semi-martingale forward price process (finite activity jumps):</h3>
 <p><span class="math display">\[
   \frac{dF_t}{F_{t-}} = \mu_{t} dt + \sigma_{t-} dW_t + \int_{\mathbb{R}\setminus \{0\}}( e^x - 1 ) \, \nu_t(dx,dt)
 \]</span></p>
@@ -640,19 +669,20 @@ Swiss Finance Institute
 \]</span></p>
 <h3 id="use-divergence-based-measures" class="bold red">Use divergence-based measures</h3>
 <ul>
-<li>Family of realized variation measures defined in <span class="citation" data-cites="Schneider2013">Schneider and Trojani (2015)</span>,</li>
+<li>Family of realized variation measures defined in <span class="citation" data-cites="Schneider2015">Schneider and Trojani (2019)</span>,</li>
 <li>Statistical inference for divergence in <span class="citation" data-cites="khajavi2015realized">Khajavi (2017)</span>.</li>
 </ul>
 <h3 id="few-assumptions" class="green bold">Few assumptions</h3>
 <ul>
-<li>Trading results <strong>do not hinge</strong> on semi-martingale world.</li>
+<li>Trading results <strong>do not hinge</strong> on semi-martingale world,</li>
+<li>Only the “jump” interpretation does.</li>
 </ul>
 </section>
 <section id="measurement-of-jump-skewness-1" class="slide level1">
 <h1>Measurement of jump skewness</h1>
-<h3 id="realized-divergence-for-p0" class="bold purple">Realized divergence for <span class="math inline">\(p=0\)</span>:</h3>
+<h3 id="realized-variance-divergence-for-p0" class="bold purple">Realized variance (divergence for <span class="math inline">\(p=0\)</span>):</h3>
 <ul>
-<li>realized divergence (<span class="math inline">\(p\)</span>) <span class="math inline">\(\approx\)</span> 1/2 realized variance (<span class="math inline">\(\color{red}{=}\)</span> if no jumps) + <span class="math inline">\(f(p)\times\)</span> jumps</li>
+<li>realized divergence (<span class="math inline">\(p=0\)</span>) <span class="math inline">\(\approx\)</span> 1/2 realized variance (<span class="math inline">\(\color{red}{=}\)</span> if no jumps) + <span class="math inline">\(f(p,\text{jump})\)</span></li>
 <li>consider VIX index; VIX<sup>2</sup>: price of <span class="citation" data-cites="itakura1968analysis">Itakura and Saito (1968)</span> divergence</li>
 <li>VIX<sup>2</sup>-based <em>variance swap</em>.</li>
 </ul>
@@ -660,7 +690,7 @@ Swiss Finance Institute
 </p>
 <h3 id="realized-jump-skew" class="bold green">Realized jump skew:</h3>
 <ul>
-<li>sensitivity of realized divergence to choice of <span class="math inline">\(p\)</span>.</li>
+<li>sensitivity of realized divergence to choice of <span class="math inline">\(p\)</span>: <span class="math inline">\(\frac{\partial D_p(r)}{\partial p}\)</span>.</li>
 </ul>
 <p style="padding-top: 0px">
 </p>
@@ -670,7 +700,7 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 \]</span></p>
 <h3 id="jump-skew-variation" class="red bold">Jump skew variation:</h3>
 <p><span class="math display">\[
-  S_{t,T} := \sum_{i=1}^N \left( e^{r_i}-1 -\frac{r_i^2}{2} - r_i  \right) \overset{\mathbb{P}}{\longrightarrow} \sum_{t \leq s \leq T} \frac{1}{6} \left(\Delta J_s\right)^3 + O(J_s)^4
+  S_{t,T} := \sum_{i=1}^N \left( \underbrace{e^{r_i}-1 - r_i}_{\text{realized divergence}} -\frac{r_i^2}{2} \right) \overset{\mathbb{P}}{\longrightarrow} \sum_{t \leq s \leq T} \frac{1}{6} \left(\Delta J_s\right)^3 + O(J_s)^4
 \]</span></p>
 </section>
 <section id="section-3" class="slide level1">
@@ -682,7 +712,12 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 </section>
 <section id="central-question-trading-strategy" class="slide level1">
 <h1>Central question: trading strategy</h1>
-<h2 id="how-to-dynamically-trade-forwards-and-options-so-that-their-settlement-payoff-equals-s_tt" class="fifty-from-top">How to <strong>dynamically</strong> trade <strong>forwards</strong> and <strong>options</strong> so that their <strong>settlement payoff</strong> equals <span class="math inline">\(S_{t,T}\)</span>?</h2>
+<h2 id="how-to-dynamically-trade-forwards-and-options-so-that-their-gross-settlement-payoff-equals-s_tt" class="fifty-from-top">How to <strong>dynamically</strong> trade <strong>forwards</strong> and <strong>options</strong> so that their gross <strong>settlement payoff</strong> equals <span class="math inline">\(S_{t,T}\)</span>?</h2>
+<p>
+<br>
+</p>
+<h4 id="gross-settlement-payoff-before-paidreceived-option-premia">Gross settlement payoff: <strong>before</strong> paid/received option premia</h4>
+<h4 id="like-the-floating-leg-of-a-variance-swap">Like the <strong>floating leg</strong> of a variance swap</h4>
 </section>
 <section id="trading-strategy" class="slide level1">
 <h1>Trading strategy</h1>
@@ -692,10 +727,10 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 <li>near continuum of strikes.</li>
 </ul>
 <h3 id="non-linear-trading" class="bold green">Non-linear trading:</h3>
-<p>Exposure to divergence of function of forward price <span class="math inline">\(\color{green}{\phi}(F_T)\)</span> available through <span class="citation" data-cites="Breeden1978">Breeden and Litzenberger (1978)</span> and <span class="citation" data-cites="Carr2001">Carr and Madan (2001)</span>: <span class="math display">\[
+<p>Exposure to divergence of function of forward price <span class="math inline">\(\color{green}{\phi}(F_T)\)</span> available through <span class="citation" data-cites="Breeden1978">Breeden and Litzenberger (1978)</span> and <span class="citation" data-cites="Carr2001b">Carr and Madan (2001)</span>: <span class="math display">\[
   D_{\color{green}{\phi}}(F_T,F_t) := \color{green}{\phi}(F_T) \color{black}- \color{green}{\phi}(F_t)  \color{black}- \color{green}{\phi}&#39;(F_t)\color{black}(F_T- F_t) = \int_0^{\infty} \color{green}{\phi}&#39;&#39;(K) \color{red}{O(F_T; K, F_t)} \color{black}dK
 \]</span></p>
-<h3 id="existing-literature-semi-static-strategies">Existing literature: semi-static strategies</h3>
+<h3 id="existing-literature-semi-static-strategies" class="bold purple">Existing literature: semi-static strategies</h3>
 <p><span class="math display">\[
   D_{\phi}(F_T,F_t) + \sum_i \delta_i (F_T - F_i)
 \]</span></p>
@@ -704,9 +739,9 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 </section>
 <section id="trading-strategy-1" class="slide level1">
 <h1>Trading strategy</h1>
-<h3 id="express-s_tt-as-sum-of-weighted-divergences-between-f_t_i-and-f_t" class="bold red">Express <span class="math inline">\(S_{t,T}\)</span> as sum of weighted divergences between <span class="math inline">\(F_{t_i}\)</span> and <span class="math inline">\(F_T\)</span>:</h3>
+<h3 id="express-s_tt-as-sum-of-option-payoffs-between-f_t_i-and-f_t" class="bold red">Express <span class="math inline">\(S_{t,T}\)</span> as sum of option payoffs between <span class="math inline">\(F_{t_i}\)</span> and <span class="math inline">\(F_T\)</span>:</h3>
 <p><span class="math display">\[
-  S_{t,T}= \sum_{i=1}^N \left( e^{r_i}-1 -\frac{r_i^2}{2} - r_i \right) =  \underbrace{\phi_s(F_T,F_{0})}_{\color{green}{\bigstar}} + \sum_i \underbrace{\gamma_{i}\phi_v(F_T,F_i)}_{\color{purple}{\bigstar}} + \underbrace{\delta_i (F_T - F_i)}_{\color{orange}{\bigstar}}.
+  S_{t,T}= \sum_{i=1}^N \left( e^{r_i}-1 - r_i -\frac{r_i^2}{2} \right) =  \underbrace{\phi_s(F_T,F_{0})}_{\color{green}{\bigstar}} + \sum_i \underbrace{\gamma_{i}\phi_v(F_T,F_i)}_{\color{purple}{\bigstar}} + \underbrace{\delta_i (F_T - F_i)}_{\color{orange}{\bigstar}}.
 \]</span></p>
 <p style="text-align: center;">
 <span class="math inline">\(\color{green}{\bigstar}\)</span> at time <span class="math inline">\(t_0\)</span> buy a <strong>skewness swap</strong>
@@ -714,36 +749,106 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 <p style="text-align: center;">
 <span class="math inline">\(\color{purple}{\bigstar}\)</span> at time <span class="math inline">\(t_i &gt; t_0\)</span> trade <span class="math inline">\(\gamma_i\)</span> <strong>variance swaps</strong> <span class="math inline">\(\color{red}//\)</span> <span class="math inline">\(\color{orange}{\bigstar}\)</span> at time <span class="math inline">\(t_i &gt; t_0\)</span> trade <span class="math inline">\(\delta_i\)</span> <strong>forwards</strong>
 </p>
-<p><img src="sofie-2018-25min_files/figure-revealjs/strategy-weights-1.png" width="960" /></p>
+<p><img src="fma-derivs-2019-30min_files/figure-revealjs/strategy-weights-1.png" width="960" /></p>
+</section>
+<section id="features-of-the-trading-strategy" class="slide level1">
+<h1>Features of the trading strategy</h1>
+<h2 id="arbitrary-trading-frequency" class="bold red">Arbitrary trading frequency</h2>
+<ul>
+<li>if options and underlying traded continuously</li>
+<li>jump interpretation at sufficiently high frequencies
+<p>
+</p></li>
+</ul>
+<h2 id="arbitrary-trading-horizon" class="bold red">Arbitrary trading horizon</h2>
+<ul>
+<li>close positions appropriately, retain interpretation
+<p>
+</p></li>
+</ul>
+<h2 id="analytical-convenience" class="bold red">Analytical convenience</h2>
+<ul>
+<li>relatively easy to calculate moments in affine models
+<p>
+</p></li>
+</ul>
+</section>
+<section id="features-of-the-trading-strategy-1" class="slide level1">
+<h1>Features of the trading strategy</h1>
+<h2 id="arbitrary-trading-frequency-1" class="bold red">Arbitrary trading frequency</h2>
+<ul>
+<li>if options and underlying traded continuously</li>
+<li>jump interpretation at sufficiently high frequencies
+<p>
+</p></li>
+</ul>
+<h2 id="arbitrary-trading-horizon-1" class="bold red">Arbitrary trading horizon</h2>
+<ul>
+<li>close positions appropriately, retain interpretation
+<p>
+</p></li>
+</ul>
+<h2 id="analytical-convenience-1" class="bold red">Analytical convenience</h2>
+<ul>
+<li>relatively easy to calculate moments in affine models
+<ul>
+<li>anyone interested?
+<p>
+</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="another-question-interpretation" class="slide level1">
+<h1>Another question: interpretation</h1>
+<h2 id="how-to-interpret-the-resulting-jump-skew-premium" class="fifty-from-top">How to interpret the resulting jump skew premium?</h2>
+<p>
+<br>
+</p>
+<p>
+</p>
+<h4 id="mathbbemathbbps_tt-estimate-from-high-frequency-data"><span class="math inline">\(\mathbb{E}^{\mathbb{P}}[S_{t,T}]\)</span> : estimate from <strong>high-frequency</strong> data</h4>
+<h4 id="mathbbemathbbqs_tt-we-dont-know-the-future-prices-of-options"><span class="math inline">\(\mathbb{E}^{\mathbb{Q}}[S_{t,T}]\)</span> : we don’t know the <strong>future prices of options</strong></h4>
 </section>
 <section id="jump-skew-premium" class="slide level1">
 <h1>Jump skew premium</h1>
-<h4 id="semi-static-strategies-e.g.variance-swaps" class="bold purple">Semi-static strategies (e.g. variance swaps):</h4>
+<h3 id="semi-static-strategies-e.g.-variance-swaps" class="bold purple">Semi-static strategies (e.g. variance swaps):</h3>
 <ul>
 <li>floating leg — realized variation measure <span class="math inline">\(\equiv\)</span> fwd + option settlement,</li>
 <li>fixed leg — <span style="color: purple">swap rate</span> — <span class="math inline">\(\mathbb{E}^{\mathbb{Q}_T}_t[\phi(F_T) - \phi(F_t)]\)</span>.</li>
 </ul>
-<h4 id="dynamic-strategies" class="bold green">Dynamic strategies:</h4>
+<h3 id="dynamic-strategies" class="bold green">Dynamic strategies:</h3>
 <ul>
-<li>replicating leg — <span style="color: green">weight <span style="font-weight: bold">integrated</span> wrt <span class="math inline">\(\Delta\)</span> SR </span>— <span class="math inline">\(\int_t^T \color{orange} \gamma_s \color{black} d \color{blue}\mathbb{E}^{\mathbb{Q}_T}_s[\phi(F_T) - \phi(F_s)]\)</span>,</li>
-<li>replication cost now known at <span class="math inline">\(t\)</span>: option rebalancing comes into play.</li>
+<li>floating leg — as above,</li>
+<li>replicating leg — two components
+<ul>
+<li>static skew swap rate (as if there was no extra hedging)</li>
+<li><span style="color: green">weight <span style="font-weight: bold">integrated</span> wrt <span class="math inline">\(\Delta\)</span> SR </span>, <span class="math inline">\(\int_t^T \color{orange} \gamma_s \color{black} d \color{blue}\mathbb{E}^{\mathbb{Q}_T}_s[\phi(F_T) - \phi(F_s)]\)</span>, <!-- - replication cost now known at $t$: option rebalancing comes into play. --></li>
+</ul></li>
 </ul>
-<h3 id="jump-skew-premium-1" class="bold red">Jump skew premium</h3>
+<h3 id="interpreting-the-jump-skew-premium" class="bold red">Interpreting the jump skew premium</h3>
 <p>With MGF of log-return <span class="math inline">\(\varphi_t(p,\tau- t) \equiv \mathbb{E}_t^{\mathbb{Q}}\left[ e^{p\log{F_{\tau}/F_t}} \right]\)</span>: <span class="math display">\[
   \mathbb{E}^{\mathbb{P}}_t[S_{t,T}] - \left[\underbrace{-\frac{1}{2}\varphi&#39;&#39;_t(0,T - t) - \varphi&#39;_t(0, T - t)}_{\color{green}{\bigstar}} - \underbrace{\int_t^{T} \color{orange}\log{\frac{F_s}{F_t}}\color{black} d \color{blue} \varphi&#39;_s(0,T - s)}_{\color{purple}{\bigstar}}\right]
 \]</span></p>
-<p>Hedging exposure to jump skewness exposes trader to volatility/skewness <span style="color: red"><strong>drivers</strong></span>.</p>
+<p>Hedging exposure to jump skewness exposes trader to <span style="color: blue">volatility price</span> <span style="color: red"><strong>drivers</strong></span>.</p>
 </section>
-<section id="jump-skew-premium-2" class="slide level1">
-<h1>Jump skew premium</h1>
+<section id="interpreting-the-jump-skew-premium-1" class="slide level1">
+<h1>Interpreting the jump skew premium</h1>
 <p><span class="math display">\[
   \mathbb{E}^{\mathbb{P}}_t[S_{t,T}] - \left[\underbrace{-\frac{1}{2}\varphi&#39;&#39;_t(0,T - t) - \varphi&#39;_t(0, T - t)}_{\color{green}{\bigstar}} - \underbrace{\int_t^{T} \color{orange} \log{\frac{F_s}{F_t}}\color{black}  d \color{blue}\varphi&#39;_s(0,T - s)}_{\color{purple}{\bigstar}}\right]
 \]</span></p>
-<h3 id="colorpurplebigstar-colorblue--varphi_s0t---s-price-of-variance-swap"><span class="math inline">\(\color{purple}{\bigstar}\)</span> <span class="math inline">\(\color{blue} -\varphi&#39;_s(0,T - s)\)</span> — price of variance swap</h3>
-<h3 id="colorpurplebigstar-colororange-logf_sf_t-position-in-variance-swap."><span class="math inline">\(\color{purple}{\bigstar}\)</span> <span class="math inline">\(\color{orange} \log{{F_s}/{F_t}}\)</span> — position in variance swap.</h3>
-<h3 id="if-we-could-trade-forwards-on-vs-this-term-would-have-mathbbq_t-expectation-0." class="bold purple">If we could trade forwards on VS: this term would have <span class="math inline">\(\mathbb{Q}_T\)</span>-expectation 0.</h3>
-<h3 id="we-cant.">We can’t.</h3>
-<h3 id="option-portfolio-rebalancing-exposes-investors-to-state-variable-risk." class="red bold">Option portfolio rebalancing exposes investors to state variable risk.</h3>
+<p><span class="math inline">\(\color{purple}{\bigstar}\)</span> <span class="math inline">\(\color{blue} -\varphi&#39;_s(0,T - s)\)</span> — price of variance swap</p>
+<p><span class="math inline">\(\color{purple}{\bigstar}\)</span> <span class="math inline">\(\color{orange} \log{{F_s}/{F_t}}\)</span> — position in variance swap.</p>
+<h4 id="if-we-could-trade-forwards-on-vs-this-term-would-have-mathbbq_t-expectation-0." class="bold purple">If we could trade forwards on VS: this term would have <span class="math inline">\(\mathbb{Q}_T\)</span>-expectation 0.</h4>
+<h4 id="but-we-cant.-option-rebalancing-exposes-investors-to-state-variable-risk." class="red bold">But we can’t. Option rebalancing exposes investors to state variable risk.</h4>
+<h3 id="however-reasonable-definition-of-premium" class="bold">However, reasonable definition of premium</h3>
+<p>Consider <span class="citation" data-cites="Merton1976">Merton (1976)</span> -type models</p>
+<ul>
+<li><span style="color: blue"><strong>Theoretical premium</strong></span>: <span class="math inline">\(\mathbb{E}^{\mathbb{P}}[S_{t,T}] - \mathbb{E}^{\mathbb{Q}}[S_{t,T}] = \lambda (T-t) \color{blue} \mathbb{E}^{\mathbb{Q}}[J^3]\)</span></li>
+<li>Discrepancy between <span style="color: red"><strong>tradable</strong></span> and <span style="color: blue"><strong>theoretical</strong></span> premium depends on size of VRP:</li>
+</ul>
+<p><span class="math display">\[
+  (T-t)^2 \mathbb{E}^{\mathbb{Q}}[d \ln F_s]\left(\mathbb{E}^{\mathbb{\color{red}P}}[d \ln F_s] - \mathbb{E}^{\mathbb{\color{blue}Q}}[d \ln F_s]  \right)
+\]</span></p>
 </section>
 <section id="section-4" class="slide level1">
 <h1></h1>
@@ -754,437 +859,858 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 </section>
 <section id="cboe-spx-weeklys" class="slide level1">
 <h1>CBOE SPX Weeklys</h1>
-<p><img src="sofie-2018-25min_files/figure-revealjs/tradingActivity-1.png" width="864" /></p>
+<p><img src="fma-derivs-2019-30min_files/figure-revealjs/tradingActivity-1.png" width="864" /></p>
 <p>Weeklys:</p>
 <ul>
 <li><span class="math inline">\(&gt; 1/3\)</span> of open interest @ CBOE</li>
-<li>significant trading activity since 2011</li>
-<li>quote vs trade data <span class="math inline">\(\longrightarrow\)</span> data selection</li>
+<li>Sufficient trading activity since 2011</li>
+<li>Quotes are 99.7% of the data</li>
 </ul>
 </section>
-<section id="trading-jump-skew-weekly" class="slide level1">
-<h1>Trading jump skew: weekly</h1>
-<p><img src="sofie-2018-25min_files/figure-revealjs/vix-skew-realized-1.png" width="700px" height="280px" style="display: block; margin-left:auto; margin-right:auto" /></p>
-<p><img src="sofie-2018-25min_files/figure-revealjs/vix-skew-trading-profits-1.png" width="700px" height="280px" style="display: block; margin-left:auto; margin-right:auto" /></p>
+<section id="profits-from-trading-return-skew" class="slide level1">
+<h1>Profits from trading return skew</h1>
+<h3 id="during-trading-hours-and-around-non-trading-periods">During trading hours and around non-trading periods</h3>
+<ul>
+<li>Lower profits during trading hours</li>
+<li>Profits over non-trading periods higher in turbulent markets
+<ul>
+<li>2011: US debt downgrade / sovereign EU crisis</li>
+<li>2015: mini flash-crash in August</li>
+</ul></li>
+</ul>
+<p><img src="fma-derivs-2019-30min_files/figure-revealjs/time-series-plots-1.png" width="864" style="display: block; margin: auto;" /></p>
 </section>
-<section id="trading-jump-skew-settlement-payoff" class="slide level1">
-<h1>Trading jump skew: settlement payoff</h1>
-<table>
+<section id="profits-from-trading-return-skew-1" class="slide level1">
+<h1>Profits from trading return skew</h1>
+<h3 id="magnitudes" class="bold red">Magnitudes:</h3>
+<ul>
+<li>when you calculate VRP, it’s <strong>dollars</strong> for variance of <strong>return</strong></li>
+<li>skew payoff measures dollars per <span style="color: red"><strong>skewness</strong></span> or return
+<ul>
+<li>rescale values by <span class="math inline">\(10^6\)</span> for legibility.</li>
+</ul></li>
+<li>margin requirements are here!</li>
+</ul>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="text-align:left;">
-frequency
+<th style="text-align:right;">
+transaction cost
+</th>
+<th style="text-align:right;">
+mean
 </th>
 <th style="text-align:center;">
-<span class="math inline">\(\mu_b\)</span>
+mean CI left
 </th>
 <th style="text-align:center;">
-<span class="math inline">\(\sigma_b\)</span>
-</th>
-<th style="text-align:center;">
-<span class="math inline">\(CI(\mu_b,0.05)\)</span>
-</th>
-<th style="text-align:center;">
-<span class="math inline">\(CI(\mu_b,0.95)\)</span>
+mean CI right
 </th>
 </tr>
 </thead>
 <tbody>
-<tr grouplength="3">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong><span class="math inline">\(S_{t,T}\)</span></strong>
+<tr grouplength="2">
+<td colspan="4" style="border-bottom: 1px solid;">
+<strong>daytime trading profits</strong>
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-daytime
+<td style="text-align:right; padding-left: 2em;" indentlevel="1">
+no
+</td>
+<td style="text-align:right;">
+<span style=" font-weight: bold;    color: rgba(59, 82, 139, 1) !important;">-0.13</span>
 </td>
 <td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #add8e6">-1.37</span>
+<span style=" font-weight: bold;    color: rgba(34, 140, 141, 1) !important;">-0.33</span>
 </td>
 <td style="text-align:center;">
-32.3
-</td>
-<td style="text-align:center;">
--3.0
-</td>
-<td style="text-align:center;">
-1.0
+<span style=" font-weight: bold;    color: rgba(70, 48, 126, 1) !important;">0.13</span>
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-overnight
+<td style="text-align:right; padding-left: 2em;" indentlevel="1">
+yes
+</td>
+<td style="text-align:right;">
+<span style=" font-weight: bold;    color: rgba(68, 1, 84, 1) !important;">-0.97</span>
 </td>
 <td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ff6347">1.01</span>
+<span style=" font-weight: bold;    color: rgba(68, 1, 84, 1) !important;">-1.35</span>
 </td>
 <td style="text-align:center;">
-69.5
+<span style=" font-weight: bold;    color: rgba(68, 1, 84, 1) !important;">-0.46</span>
 </td>
-<td style="text-align:center;">
--3.1
-</td>
-<td style="text-align:center;">
-4.4
+</tr>
+<tr grouplength="2">
+<td colspan="4" style="border-bottom: 1px solid;">
+<strong>overnight trading profits</strong>
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-weekly
+<td style="text-align:right; padding-left: 2em;" indentlevel="1">
+no
+</td>
+<td style="text-align:right;">
+<span style=" font-weight: bold;    color: rgba(31, 158, 137, 1) !important;">0.90</span>
 </td>
 <td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #b9c6ce">-1.02</span>
+<span style=" font-weight: bold;    color: rgba(120, 209, 82, 1) !important;">0.33</span>
 </td>
 <td style="text-align:center;">
-18.8
+<span style=" font-weight: bold;    color: rgba(39, 128, 142, 1) !important;">1.35</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;" indentlevel="1">
+yes
+</td>
+<td style="text-align:right;">
+<span style=" font-weight: bold;    color: rgba(38, 129, 142, 1) !important;">0.49</span>
 </td>
 <td style="text-align:center;">
--2.8
+<span style=" font-weight: bold;    color: rgba(49, 181, 123, 1) !important;">0.03</span>
 </td>
 <td style="text-align:center;">
-1.1
+<span style=" font-weight: bold;    color: rgba(52, 96, 141, 1) !important;">0.82</span>
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="4" style="border-bottom: 1px solid;">
+<strong>weekend trading profits</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;" indentlevel="1">
+no
+</td>
+<td style="text-align:right;">
+<span style=" font-weight: bold;    color: rgba(187, 223, 39, 1) !important;">2.04</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(187, 223, 39, 1) !important;">0.54</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(187, 223, 39, 1) !important;">3.34</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;" indentlevel="1">
+yes
+</td>
+<td style="text-align:right;">
+<span style=" font-weight: bold;    color: rgba(31, 162, 135, 1) !important;">0.95</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(33, 166, 133, 1) !important;">-0.10</span>
+</td>
+<td style="text-align:center;">
+<span style=" font-weight: bold;    color: rgba(37, 171, 130, 1) !important;">2.12</span>
 </td>
 </tr>
 </tbody>
 </table>
-<p style="font-size: 0.5em; padding-top: 0px; margin-top: 0px">
-Daytime and overnight variation scaled by 5 (days).
-</p>
+<h3 id="first-conclusions" class="bold red">First conclusions</h3>
 <ul>
-<li>Values of jump skew payoff at option and forward settlement.</li>
-<li>Average jump skew variation is 0 over all periods.</li>
-<li>Positive and negative jumps wash away.</li>
-<li>Consistent with findings in the literaure.</li>
+<li><span style="color: red">No compensation</span> for jump skew risk in <span style="color: red">continuous trading</span>,</li>
+<li><span style="color: blue">Positive premium</span> for holding skew positions <span style="color: blue">over non-trading periods</span>
+<ul>
+<li>Same effect for <span style="color: purple"><strong>shorting variance</strong></span></li>
+</ul></li>
 </ul>
-<!-- calcs for overnight/conditional bootstrap -->
 </section>
-<section id="trading-jump-skew-profits" class="slide level1">
-<h1>Trading jump skew: profits</h1>
-<table>
-<thead>
+<section id="further-questions" class="slide level1">
+<h1>Further questions</h1>
+<h3 id="long-skew-vs-short-variance-trades" class="bold red">Long skew vs short variance trades</h3>
+<ul>
+<li>Both strategies short put options
+<ul>
+<li>Skew shorts more OTM puts</li>
+</ul></li>
+<li>Are deeper OTM options sufficiently different to bring about a different risk exposure?</li>
+</ul>
+<h3 id="known-risk-factors" class="bold red">Known risk factors</h3>
+<ul>
+<li>To what extent can we explain these profits with standard factors?
+<ul>
+<li>Tradable quantities, require <span class="math inline">\(\alpha=0\)</span> in TS regression</li>
+</ul></li>
+<li>CAPM and Intermediary factor
+<ul>
+<li>Supply/demand models (<span class="citation" data-cites="Garleanu2009">Gârleanu, Pedersen, and Poteshman (2009)</span>) give intermediaries a particular role</li>
+<li>Important in empirical studies (<span class="citation" data-cites="He2017">He, Kelly, and Manela (2017)</span>)</li>
+</ul></li>
+</ul>
+<h3 id="mispricing-vs-risk" class="bold red">Mispricing vs risk</h3>
+<ul>
+<li>Is this strategy a good hedge of return skew?</li>
+<li>Are premia predictable by measures of return variation?</li>
+</ul>
+</section>
+<section id="spanning-by-known-risk-factors" class="slide level1">
+<h1>Spanning by known risk factors</h1>
+<h3 id="regress-skew-trading-profits-s_t-across-non-trading-periods-on" class="bold red">Regress skew trading profits <span style="color: purple"><span class="math inline">\(s_t\)</span></span> across non-trading periods on:</h3>
+<ul>
+<li>contemporary <span style="color: orange">market return <span class="math inline">\(r_{mt}\)</span></span>,</li>
+<li>contemporary return on the <span style="color: blue">primary dealer</span> (intermediary) portfolio <span style="color: blue"><span class="math inline">\(r_{dt}\)</span></span>,</li>
+<li>contemporary <span style="color: red">variance profit <span class="math inline">\(v_t\)</span></span>.</li>
+</ul>
+<p><span class="math display">\[
+  s_t = \color{Maroon}\alpha\color{black} + \beta_m r_{mt} + \beta_d r_{dt} + \beta_v v_t + \eta_t
+\]</span></p>
+<h3 id="interpretation" class="bold red">Interpretation</h3>
+<ul>
+<li>all three proposed factors are tradable,</li>
+<li>if <span class="math inline">\(\color{Maroon}\alpha\color{black} = 0\)</span>, <span style="color: purple"><span class="math inline">\(s_t\)</span></span> profits are explained by known systematic factors.</li>
+</ul>
+<!-- ### Measurement error -->
+<!-- - Both variance and skew replicating portfolios are approximate -->
+<!-- - There might be correlated measurement errors in skew profit $s_t$ and variance profit $v_t$ -->
+<!-- $$ -->
+<!--   s_t = s_t^{\star} + \eta^s_t, \quad \quad v_t = v_t^{\star} + \eta^v_t \quad \quad \text{and} \quad \quad (s_t^{\star}, v_t^{\star}) \perp \eta^{\cdot}_t, \quad \quad \eta^s_t \not\perp \eta^v_t -->
+<!-- $$ -->
+<!-- - In regression $s_t = \alpha + \beta v_t + \varepsilon_t$ -->
+<!-- $$ -->
+<!--   \widehat{\beta}_{\text{OLS}} = \frac{Cov[s^{\star}_t, v^{\star}_t] + Cov[\eta^s_t, \eta^v_t]}{Var[v^{\star}_t] + Var[\eta^v_t]} -->
+<!-- $$ -->
+<!-- - IV estimator solves the problem -->
+<!--   - instrument: lagged variance profit / lagged market return -->
+</section>
+<section id="spanning-by-known-risk-factors-raw-profits" class="slide level1">
+<h1>Spanning by known risk factors: raw profits</h1>
+<div id="centered-table">
+<table style="border-collapse:collapse; border:none;">
 <tr>
-<th style="text-align:left;">
-frequency
+<th style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm;  text-align:left; ">
+ 
 </th>
-<th style="text-align:center;">
-<span class="math inline">\(\mu_b\)</span>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#CC79A7">ON</span>
 </th>
-<th style="text-align:center;">
-<span class="math inline">\(\sigma_b\)</span>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#CC79A7">ON</span>
 </th>
-<th style="text-align:center;">
-<span class="math inline">\(CI(\mu_b,0.05)\)</span>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#CC79A7">ON</span>
 </th>
-<th style="text-align:center;">
-<span class="math inline">\(CI(\mu_b,0.95)\)</span>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#0072B2">WKND</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#0072B2">WKND</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#0072B2">WKND</span>
 </th>
 </tr>
-</thead>
-<tbody>
-<tr grouplength="3">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>profit</strong>
+<tr>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  text-align:left; ">
+Predictors
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  col7">
+Estimates
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-daytime
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(\alpha\)</span>
 </td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #de9085">0.7</span>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.67 <sup>***</sup>
 </td>
-<td style="text-align:center;">
-292.7
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.62 <sup>***</sup>
 </td>
-<td style="text-align:center;">
--12.9
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.37 <sup>***</sup>
 </td>
-<td style="text-align:center;">
-13.6
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+2.44 <sup>***</sup>
 </td>
-</tr>
-<tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-overnight
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+2.55 <sup>***</sup>
 </td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ff6347">62.7</span>
-</td>
-<td style="text-align:center;">
-305.7
-</td>
-<td style="text-align:center;">
-35.7
-</td>
-<td style="text-align:center;">
-84.2
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">
+0.24 <sup></sup>
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-weekly
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(r_{mt}\)</span>
 </td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #f66f57">45.8</span>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+4.79 <sup>***</sup>
 </td>
-<td style="text-align:center;">
-166.6
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+3.17 <sup></sup>
 </td>
-<td style="text-align:center;">
-12.8
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+2.08 <sup></sup>
 </td>
-<td style="text-align:center;">
-69.9
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+7.13 <sup>***</sup>
 </td>
-</tr>
-<tr grouplength="3">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>profit w/ bid-ask</strong>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+3.91 <sup>***</sup>
 </td>
-</tr>
-<tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-daytime
-</td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #add8e6">-95.9</span>
-</td>
-<td style="text-align:center;">
-369.9
-</td>
-<td style="text-align:center;">
--127.8
-</td>
-<td style="text-align:center;">
--52.9
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">
+0.88 <sup></sup>
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-overnight
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(r_{dt}\)</span>
 </td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #df9084">1.6</span>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
 </td>
-<td style="text-align:center;">
-259.4
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+1.40 <sup></sup>
 </td>
-<td style="text-align:center;">
--12.4
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.27 <sup></sup>
 </td>
-<td style="text-align:center;">
-15.5
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+2.49 <sup>**</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">
+1.80 <sup>*</sup>
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-weekly
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(v_t\)</span>
 </td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #e08d81">4.6</span>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
 </td>
-<td style="text-align:center;">
-202.4
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
 </td>
-<td style="text-align:center;">
--11.0
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.04 <sup>***</sup>
 </td>
-<td style="text-align:center;">
-27.6
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">
+0.05 <sup>***</sup>
 </td>
 </tr>
-</tbody>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm; border-top:1px solid;">
+Observations
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+730
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+730
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+730
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+263
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+263
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+263
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">
+R<sup>2</sup> / R<sup>2</sup> adjusted
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.252 / 0.251
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.268 / 0.266
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.602 / 0.600
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.377 / 0.375
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.403 / 0.399
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.799 / 0.797
+</td>
+</tr>
+<tr>
+<td colspan="7" style="font-style:italic; border-top:double black; text-align:right;">
+<ul>
+<li>p&lt;0.1   ** p&lt;0.05   *** p&lt;0.01
+</td>
+</tr></li>
+</ul>
 </table>
-<p style="font-size: 0.5em; padding-top: 0px; margin-top: 0px">
-Daytime and overnight variation scaled by 5 (days).
-</p>
-<p>Weekly trading significantly profitable before transaction costs (though not after).</p>
-<p>Disaggregate results:</p>
-<ul>
-<li>No profits in daytime trading (09:00-14:30)</li>
-<li>Significant profits from holding overnight positions (14:30 - 09:00)</li>
-</ul>
-</section>
-<section id="trading-jump-skew-replication-cost" class="slide level1">
-<h1>Trading jump skew: replication cost</h1>
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-frequency
-</th>
-<th style="text-align:center;">
-<span class="math inline">\(\mu_b\)</span>
-</th>
-<th style="text-align:center;">
-<span class="math inline">\(\sigma_b\)</span>
-</th>
-<th style="text-align:center;">
-<span class="math inline">\(CI(\mu_b,0.05)\)</span>
-</th>
-<th style="text-align:center;">
-<span class="math inline">\(CI(\mu_b,0.95)\)</span>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr grouplength="3">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>rebalancing</strong>
-</td>
-</tr>
-<tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-daytime
-</td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #f66f57">5.1</span>
-</td>
-<td style="text-align:center;">
-154.1
-</td>
-<td style="text-align:center;">
--1.7
-</td>
-<td style="text-align:center;">
-11.1
-</td>
-</tr>
-<tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-overnight
-</td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #f3725c">2.9</span>
-</td>
-<td style="text-align:center;">
-137.4
-</td>
-<td style="text-align:center;">
--3.8
-</td>
-<td style="text-align:center;">
-8.8
-</td>
-</tr>
-<tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-weekly
-</td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ff6347">13.4</span>
-</td>
-<td style="text-align:center;">
-124.1
-</td>
-<td style="text-align:center;">
--3.7
-</td>
-<td style="text-align:center;">
-25.7
-</td>
-</tr>
-<tr grouplength="3">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>swap rate</strong>
-</td>
-</tr>
-<tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-daytime
-</td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #e98271">-7.4</span>
-</td>
-<td style="text-align:center;">
-192.2
-</td>
-<td style="text-align:center;">
--16.7
-</td>
-<td style="text-align:center;">
-4.5
-</td>
-</tr>
-<tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-overnight
-</td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #add8e6">-64.6</span>
-</td>
-<td style="text-align:center;">
-197.9
-</td>
-<td style="text-align:center;">
--85.8
-</td>
-<td style="text-align:center;">
--36.2
-</td>
-</tr>
-<tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-weekly
-</td>
-<td style="text-align:center;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #b1d1dd">-60.2</span>
-</td>
-<td style="text-align:center;">
-100.3
-</td>
-<td style="text-align:center;">
--85.5
-</td>
-<td style="text-align:center;">
--23.5
-</td>
-</tr>
-</tbody>
-</table>
-<p style="font-size: 0.5em; padding-top: 0px; margin-top: 0px">
-Daytime and overnight variation scaled by 5 (days).
-</p>
-<p>Two components in replication cost:</p>
-<ul>
-<li>swap rate change from inception to maturity</li>
-<li>rebalancing of position</li>
-</ul>
-<p>Negative values = income.</p>
-<p>Skewness swap rates change little over the course of the day. (OTM put prices change little).</p>
-<p>Most change cumulated in overnight periods.</p>
-</section>
-<section id="trading-jump-skew-after-jumps" class="slide level1">
-<h1>Trading jump skew: after jumps</h1>
-<div class="container" style="text-align: left">
-<div class="col">
-<p>
-<strong>Recall</strong>: negative jumps <strong>persistently</strong> increase price of OTM puts. (<span class="citation" data-cites="Andersen2015a">Andersen, Todorov, and Fusari (2015)</span>)
-<p>
-<p>
-<strong>Overnight</strong> trading profits increase after jump events.
-<ul>
-<li>
-Overnight trade = sell puts, buy calls, reverse next morning
-</li>
-<li>
-no rebalancing
-</li>
-</ul>
-</p>
-<p>
-<strong>Positive jumps</strong> also seem to impact put prices.
-</p>
 </div>
-<div class="col">
-<p><img src="sofie-2018-25min_files/figure-revealjs/vix-skew-trading-conditional-plots-1.png" width="500px" height="400px" style="vertical-align: bottom" /></p>
+<ul>
+<li>Exposure to <span style="color: red"><strong>market risk</strong></span> explains <strong>~30%</strong> of after-hours skew profits,</li>
+<li><span style="color:#009E73"><strong>Positive association</strong></span> between profits from <strong>shorting variance</strong> and <strong>skew profits</strong>,
+<ul>
+<li><strong>But</strong> profits from <strong>shorting variance</strong> subsumed by the market return in <span style="color:#CC79A7"><strong>ON</strong></span> trading,</li>
+</ul></li>
+<li>Residual <span class="math inline">\(\color{Maroon}\alpha\)</span> in <span style="color:#CC79A7"><strong>ON</strong></span> but <strong>not</strong> <span style="color:#0072B2"><strong>WKND</strong></span> regressions with profits from <strong>shorting variance</strong></li>
+<li>Little space for the <span style="color:#56B4E9;font-weight:900">intermediary risk factor</span>.</li>
+</ul>
+</section>
+<section id="spanning-by-known-risk-factors-transaction-costs" class="slide level1">
+<h1>Spanning by known risk factors: transaction costs</h1>
+<div id="centered-table">
+<table style="border-collapse:collapse; border:none;">
+<tr>
+<th style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm;  text-align:left; ">
+ 
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#CC79A7;font-weight:900">ON</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#CC79A7;font-weight:900">ON</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#CC79A7;font-weight:900">ON</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#0072B2;font-weight:900">WKND</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#0072B2;font-weight:900">WKND</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#0072B2;font-weight:900">WKND</span>
+</th>
+</tr>
+<tr>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  text-align:left; ">
+Predictors
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  col7">
+Estimates
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(\alpha\)</span>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.26 <sup></sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.22 <sup></sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+-0.04 <sup></sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+1.44 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+1.54 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">
+-0.42 <sup></sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(r_{mt}\)</span>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+4.93 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+3.45 <sup>*</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+2.35 <sup></sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+7.48 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+4.38 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">
+1.82 <sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(r_{dt}\)</span>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+1.28 <sup></sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.14 <sup></sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+2.39 <sup>**</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">
+1.81 <sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(v_t\)</span>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.04 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">
+0.04 <sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm; border-top:1px solid;">
+Observations
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+730
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+730
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+730
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+263
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+263
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+263
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">
+R<sup>2</sup> / R<sup>2</sup> adjusted
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.279 / 0.278
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.293 / 0.291
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.648 / 0.647
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.447 / 0.445
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.473 / 0.469
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.780 / 0.777
+</td>
+</tr>
+<tr>
+<td colspan="7" style="font-style:italic; border-top:double black; text-align:right;">
+<ul>
+<li>p&lt;0.1   ** p&lt;0.05   *** p&lt;0.01
+</td>
+</tr></li>
+</ul>
+</table>
 </div>
+<ul>
+<li>Even <strong>modest transaction costs</strong> erase the <strong>risk-adjusted</strong> profitability of <span style="color:#CC79A7"><strong>ON</strong></span> trading,</li>
+<li>In <span style="color:#0072B2"><strong>WKND</strong></span> trading, <strong>no profiability</strong> beyond exposure to <span style="color:red"><strong>standard factors</strong></span>,</li>
+<li>Real extent of transaction costs hard to judge, lower than posted spreads (<span class="citation" data-cites="Muravyev2015">Muravyev and Pearson (2015)</span>),
+<ul>
+<li>We observe many transactions <strong>within the spread</strong>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="option-mispricing-vs-risk-based-explanations" class="slide level1">
+<h1>Option mispricing vs risk-based explanations?</h1>
+<h3 id="puzzling-patterns-in-option-returns" class="red bold">Puzzling patterns in option returns</h3>
+<ul>
+<li>Options (<strong>puts</strong>!) are very expensive, deliver strongly negative returns
+<ul>
+<li>zero / positive returns during market hours</li>
+<li>negative returns when held over non-trading periods</li>
+</ul></li>
+</ul>
+<h3 id="quantity-vs-price-of-risk-explanations" class="red bold">Quantity vs price of risk explanations?</h3>
+<ul>
+<li>It’s <span style="color:red">not quantity</span>
+<ul>
+<li>Returns in non-trading periods have lower variance than during market hours</li>
+<li>We see NT period returns are less risky by all imaginable measures</li>
+</ul></li>
+<li>It’s <span style="color:red">not price</span>
+<ul>
+<li>No patterns in returns on options with different features (and thus exposures)</li>
+</ul></li>
+<li>All findings in <span class="citation" data-cites="Jones2018">Jones and Shemesh (2018)</span>, <span class="citation" data-cites="Muravyev2016">Muravyev and Ni (2019)</span></li>
+</ul>
+<h3 id="our-evidence" class="purple bold">Our evidence</h3>
+<ul>
+<li>Mispricing explanation bounded by the extent to which CAPM explains profits,</li>
+<li>The skew strategy is a <strong>good hedge</strong> of <strong>return skewness</strong>,</li>
+<li>The skew profits are <strong>predictable</strong> with <strong>return variation measures</strong>.</li>
+</ul>
+</section>
+<section id="hedging-overnight-return-skew" class="slide level1">
+<h1>Hedging overnight return skew</h1>
+<h3 id="payoff-design" class="red bold">Payoff design</h3>
+<ul>
+<li>The <strong>settlement</strong> of the options and forwards pays exactly <strong>return skew</strong></li>
+</ul>
+<h3 id="empirically" class="red bold">Empirically</h3>
+<ul>
+<li>The <strong>option premia</strong> component is much larger than <strong>settlement</strong>
+<ul>
+<li>Is it correlated with <strong>return skew</strong>?
+<p>
+<br>
+</p></li>
+</ul></li>
+</ul>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+horizon
+</th>
+<th style="text-align:left;">
+quantity
+</th>
+<th style="text-align:right;">
+cor
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+overnight
+</td>
+<td style="text-align:left;">
+profit
+</td>
+<td style="text-align:right;">
+0.5451870
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+overnight
+</td>
+<td style="text-align:left;">
+profit_long
+</td>
+<td style="text-align:right;">
+0.5368903
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+weekend
+</td>
+<td style="text-align:left;">
+profit
+</td>
+<td style="text-align:right;">
+0.7588680
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+weekend
+</td>
+<td style="text-align:left;">
+profit_long
+</td>
+<td style="text-align:right;">
+0.8395925
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="predicting-overnight-skew-profits" class="slide level1">
+<h1>Predicting overnight skew profits</h1>
+<h3 id="temporal-variation" class="red bold">Temporal variation</h3>
+<ul>
+<li>Average profitability of after-hours skew profits varies over time
+<ul>
+<li>it’s higher following days with high volatility and negative returns</li>
+</ul></li>
+</ul>
+<p>
+<br>
+</p>
+<div id="centered-table">
+<table style="border-collapse:collapse; border:none;">
+<tr>
+<th style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm;  text-align:left; ">
+ 
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+skew<span class="math inline">\(_{\text{night}}\)</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+variance<span class="math inline">\(_{\text{night}}\)</span>
+</th>
+</tr>
+<tr>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  text-align:left; ">
+Predictors
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+intercept
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+-0.09 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+-0.04 <sup></sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+wknd
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.16 <sup>*</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.28 <sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(r_{m,\text{day}}^3\)</span>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+-0.20 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+-0.13 <sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(BV_{\text{day}}\)</span>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.34 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.19 <sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\((RV - BV)_{\text{day}}\)</span>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.09 <sup>**</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+0.10 <sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm; border-top:1px solid;">
+Observations
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+997
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+997
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">
+R<sup>2</sup> / R<sup>2</sup> adjusted
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.199 / 0.196
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.093 / 0.090
+</td>
+</tr>
+<tr>
+<td colspan="3" style="font-style:italic; border-top:double black; text-align:right;">
+<ul>
+<li>p&lt;0.1   ** p&lt;0.05   *** p&lt;0.01
+</td>
+</tr></li>
+</ul>
+</table>
 </div>
 </section>
 <section id="summary" class="slide level1">
 <h1>Summary</h1>
-<h3 id="first-model-free-strategy-that-pays-a-functional-of-the-path-of-jumps-at-settlement-1">First model-free strategy that pays a <strong>functional of the path of jumps</strong> at settlement</h3>
+<h3 id="first-model-free-strategy-that-pays-a-functional-of-the-path-of-jumps-at-settlement">First model-free strategy that pays a <strong>functional of the path of jumps</strong> at settlement</h3>
 <ul>
 <li>Dynamic option trading</li>
 <li>Fully non-parametric investigation of jump skew pricing</li>
@@ -1209,81 +1735,224 @@ no rebalancing
 <li>high variance of estimates</li>
 <li>small significant profits in robust analysis.</li>
 </ul>
-<h3 id="future-research">Future research</h3>
+</section>
+<section id="spanning-of-variance-profits" class="slide level1">
+<h1>Spanning of variance profits</h1>
+<table style="border-collapse:collapse; border:none;">
+<tr>
+<th style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm;  text-align:left; ">
+ 
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#CC79A7;font-weight:900">ON</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#CC79A7;font-weight:900">ON</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#0072B2;font-weight:900">WKND</span>
+</th>
+<th colspan="1" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">
+<span style="color:#0072B2;font-weight:900">WKND</span>
+</th>
+</tr>
+<tr>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  text-align:left; ">
+Predictors
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">
+Estimates
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(\alpha\)</span>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+7.94 <sup>*</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+6.94 <sup>*</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+46.95 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+47.55 <sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(r_{mt}\)</span>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+64.53 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+29.36 <sup></sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+80.52 <sup>***</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+62.19 <sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">
+<span class="math inline">\(r_{dt}\)</span>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+30.53 <sup>*</sup>
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
+14.16 <sup></sup>
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm; border-top:1px solid;">
+Observations
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+730
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+730
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+263
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="1">
+263
+</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">
+R<sup>2</sup> / R<sup>2</sup> adjusted
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.155 / 0.153
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.180 / 0.177
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.222 / 0.219
+</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="1">
+0.226 / 0.220
+</td>
+</tr>
+<tr>
+<td colspan="5" style="font-style:italic; border-top:double black; text-align:right;">
 <ul>
-<li>bi-daily skewness/variance swaps possible with new CBOE products</li>
+<li>p&lt;0.1   ** p&lt;0.05   *** p&lt;0.01
+</td>
+</tr></li>
 </ul>
+</table>
 </section>
 <section id="references" class="slide level1 unnumbered">
 <h1>References</h1>
 <div id="refs" class="references">
-<div id="ref-Andersen2015a">
-<p>Andersen, Torben, Viktor Todorov, and Nicola Fusari. 2015. “The Risk Premia Embedded in Index Options.” <em>Journal of Financial Economics</em> Forthcoming.</p>
+<div id="ref-Andersen2017">
+<p>Andersen, TorbenG., Nicola Fusari, and Viktor Todorov. 2017. “Short-Term Market Risks Implied by Weekly Options.” <em>The Journal of Finance</em> 72 (3): 1335–86. <a href="https://doi.org/10.1111/jofi.12486">https://doi.org/10.1111/jofi.12486</a>.</p>
 </div>
-<div id="ref-andersen2015pricing">
-<p>———. 2016. “The Pricing of Short-Term Market Risk: Evidence from Weekly Options.” <em>Journal of Finance</em>.</p>
+<div id="ref-Andersen2013">
+<p>Andersen, Torben G., Viktor Todorov, and Nicola Fusari. 2015. “The risk premia embedded in index options.” <em>Journal of Financial Economics</em> 117 (3): 558–84. <a href="https://doi.org/http://dx.doi.org/10.1016/j.jfineco.2015.06.005">https://doi.org/http://dx.doi.org/10.1016/j.jfineco.2015.06.005</a>.</p>
 </div>
 <div id="ref-arditti1967risk">
-<p>Arditti, Fred D. 1967. “RISK and the Required Return on Equity.” <em>The Journal of Finance</em> 22 (1): 19–36. doi:<a href="https://doi.org/10.1111/j.1540-6261.1967.tb01651.x">10.1111/j.1540-6261.1967.tb01651.x</a>.</p>
+<p>Arditti, Fred D. 1967. “RISK AND THE REQUIRED RETURN ON EQUITY.” <em>The Journal of Finance</em> 22 (1): 19–36. <a href="https://doi.org/10.1111/j.1540-6261.1967.tb01651.x">https://doi.org/10.1111/j.1540-6261.1967.tb01651.x</a>.</p>
 </div>
 <div id="ref-barro2006rare">
-<p>Barro, Robert J. 2006. “Rare Disasters and Asset Markets in the Twentieth Century.” <em>The Quarterly Journal of Economics</em> 121 (3). Oxford University Press: pp. 823–66.</p>
+<p>Barro, Robert J. 2006. “Rare Disasters and Asset Markets in the Twentieth Century.” <em>The Quarterly Journal of Economics</em> 121 (3): pp. 823–66.</p>
 </div>
 <div id="ref-barro2008macroeconomic">
-<p>Barro, Robert J., and Jose F. Ursúa. 2008. “Macroeconomic Crises since 1870.” <em>Brookings Papers on Economic Activity</em> 39 (1 (Spring): 255–350. <a href="https://ideas.repec.org/a/bin/bpeajo/v39y2008i2008-01p255-350.html" class="uri">https://ideas.repec.org/a/bin/bpeajo/v39y2008i2008-01p255-350.html</a>.</p>
-</div>
-<div id="ref-Bollerslev2014time">
-<p>Bollerslev, Tim, and Viktor Todorov. 2014. “Time-Varying Jump Tails.” <em>Journal of Econometrics</em> 183 (2): 168–80. doi:<a href="https://doi.org/http://dx.doi.org/10.1016/j.jeconom.2014.05.007">http://dx.doi.org/10.1016/j.jeconom.2014.05.007</a>.</p>
+<p>Barro, Robert J, and Jose F Ursúa. 2008. “Macroeconomic Crises since 1870.” <em>Brookings Papers on Economic Activity</em> 39 (1 (Spring): 255–350. <a href="https://ideas.repec.org/a/bin/bpeajo/v39y2008i2008-01p255-350.html">https://ideas.repec.org/a/bin/bpeajo/v39y2008i2008-01p255-350.html</a>.</p>
 </div>
 <div id="ref-Bollerslev2016">
-<p>Bollerslev, Tim, Sophia Zhengzi Li, and Viktor Todorov. 2016. “Roughing up Beta: Continuous Versus Discontinuous Betas and the Cross Section of Expected Stock Returns.” <em>Journal of Financial Economics</em> 120 (3): 464–90.</p>
+<p>Bollerslev, Tim, Sophia Zhengzi Li, and Viktor Todorov. 2016. “Roughing up beta: Continuous versus discontinuous betas and the cross section of expected stock returns.” <em>Journal of Financial Economics</em> 120 (3): 464–90. <a href="https://doi.org/10.1016/j.jfineco.2016.02.001">https://doi.org/10.1016/j.jfineco.2016.02.001</a>.</p>
+</div>
+<div id="ref-Bollerslev2014time">
+<p>Bollerslev, Tim, and Viktor Todorov. 2014. “Time-varying jump tails.” <em>Journal of Econometrics</em> 183 (2): 168–80. <a href="https://doi.org/http://dx.doi.org/10.1016/j.jeconom.2014.05.007">https://doi.org/http://dx.doi.org/10.1016/j.jeconom.2014.05.007</a>.</p>
 </div>
 <div id="ref-bollerslev2015tail">
-<p>Bollerslev, Tim, Viktor Todorov, and Lai Xu. 2015. “Tail Risk Premia and Return Predictability.” <em>Journal of Financial Economics</em> 118 (1): 113–34.</p>
+<p>Bollerslev, Tim, Viktor Todorov, and Lai Xu. 2015. “Tail risk premia and return predictability.” <em>Journal of Financial Economics</em> 118 (1): 113–34.</p>
 </div>
 <div id="ref-Breeden1978">
-<p>Breeden, Douglas T., and Robert H. Litzenberger. 1978. “Prices of State-Contingent Claims Implicit in Option Prices.” <em>The Journal of Bussiness</em> 51 (4): 621–51.</p>
+<p>Breeden, Douglas T, and Robert H Litzenberger. 1978. “Prices of State-contingent Claims Implicit in Option Prices.” <em>The Journal of Bussiness</em> 51 (4): 621–51.</p>
 </div>
-<div id="ref-Carr2001">
-<p>Carr, Peter, and Dilip Madan. 2001. “Optimal Positioning in Derivative Securities.” <em>Quantitative Finance</em>. Taylor; Francis.</p>
+<div id="ref-Carr2001b">
+<p>Carr, P., and D. Madan. 2001. “Optimal Positioning in Derivative Securities.” <em>Quantitative Finance</em> 1 (1): 19–37. <a href="https://doi.org/10.1080/713665549">https://doi.org/10.1080/713665549</a>.</p>
+</div>
+<div id="ref-Garleanu2009">
+<p>Gârleanu, Nicolae, Lasse Heje Pedersen, and Allen M. Poteshman. 2009. “Demand-Based Option Pricing.” <em>Review of Financial Studies</em> 22 (10): 4259–99. <a href="https://doi.org/10.1093/rfs/hhp005">https://doi.org/10.1093/rfs/hhp005</a>.</p>
 </div>
 <div id="ref-harvey2002skewness">
-<p>Harvey, Campbell R., and Akhtar Siddique. 2002. “Conditional Skewness in Asset Pricing Tests.” <em>The Journal of Finance</em> 55 (3): 1263–95. doi:<a href="https://doi.org/10.1111/0022-1082.00247">10.1111/0022-1082.00247</a>.</p>
+<p>Harvey, Campbell R, and Akhtar Siddique. 2002. “Conditional Skewness in Asset Pricing Tests.” <em>The Journal of Finance</em> 55 (3): 1263–95. <a href="https://doi.org/10.1111/0022-1082.00247">https://doi.org/10.1111/0022-1082.00247</a>.</p>
+</div>
+<div id="ref-He2017">
+<p>He, Zhiguo, Bryan Kelly, and Asaf Manela. 2017. “Intermediary Asset Pricing: New Evidence from Many Asset Classes.” <em>Journal of Financial Economics</em> 126 (1): 1–35. <a href="https://doi.org/10.1016/j.jfineco.2017.08.002">https://doi.org/10.1016/j.jfineco.2017.08.002</a>.</p>
 </div>
 <div id="ref-itakura1968analysis">
-<p>Itakura, F., and S. Saito. 1968. “Analysis Synthesis Telephony Based on the Maximum Likelihood Method.” In <em>Proceedings of the 6th International Congress on Acoustics</em>, 17:C17–C20. IEEE.</p>
+<p>Itakura, F, and S Saito. 1968. “Analysis synthesis telephony based on the maximum likelihood method.” In <em>Proceedings of the 6th International Congress on Acoustics</em>, 17:C17–C20. IEEE.</p>
 </div>
-<div id="ref-kelly2014tail">
-<p>Kelly, Bryan, and Hao Jiang. 2014. “Tail risk and asset prices.” <em>Review of Financial Studies</em> 27 (10): 2841–71. doi:<a href="https://doi.org/10.1093/rfs/hhu039">10.1093/rfs/hhu039</a>.</p>
+<div id="ref-Jones2018">
+<p>Jones, Christopher S., and Joshua Shemesh. 2018. “Option Mispricing around Nontrading Periods.” <em>Journal of Finance</em>. <a href="https://doi.org/10.1111/jofi.12603">https://doi.org/10.1111/jofi.12603</a>.</p>
+</div>
+<div id="ref-Kelly2014">
+<p>Kelly, Bryan, and Hao Jiang. 2014. “Tail risk and asset prices.” <em>Review of Financial Studies</em> 27 (10): 2841–71. <a href="https://doi.org/10.1093/rfs/hhu039">https://doi.org/10.1093/rfs/hhu039</a>.</p>
 </div>
 <div id="ref-khajavi2015realized">
-<p>Khajavi, Ali Noori. 2017. “The Econometrics of Realized Divergence.” PhD thesis, Università Bocconi.</p>
+<p>Khajavi, Ali Noori. 2017. “The econometrics of realized divergence.” PhD thesis, Università Bocconi.</p>
 </div>
-<div id="ref-kraus1976skewness">
-<p>Kraus, Alan, and Robert H. Litzenberger. 1976. “SKEWNESS Preference and the Valuation of Risk Assets*.” <em>The Journal of Finance</em> 31 (4): 1085–1100. doi:<a href="https://doi.org/10.1111/j.1540-6261.1976.tb01961.x">10.1111/j.1540-6261.1976.tb01961.x</a>.</p>
+<div id="ref-Kraus1976">
+<p>Kraus, Alan, and Robert H Litzenberger. 1976. “Skewness Preference and the Valuation of Risk Assets.” <em>Journal of Finance</em> 31 (4): 1085–1100.</p>
 </div>
-<div id="ref-Schneider2013">
-<p>Schneider, Paul, and Fabio Trojani. 2015. “Divergence and the Price of Uncertainty.”</p>
+<div id="ref-Merton1976">
+<p>Merton, Robert C. 1976. “Option pricing when underlying stock returns are discontinuous.” <em>Journal of Financial Economics</em> 3 (1-2): 125–44. <a href="https://doi.org/10.1016/0304-405X(76)90022-2">https://doi.org/10.1016/0304-405X(76)90022-2</a>.</p>
 </div>
-<div id="ref-schneider2016low">
-<p>Schneider, Paul, Christian Wagner, and Josef Zechner. 2016. “Low Risk Anomalies?” CFS Working Paper Series 550. Center for Financial Studies (CFS). <a href="https://EconPapers.repec.org/RePEc:zbw:cfswop:550" class="uri">https://EconPapers.repec.org/RePEc:zbw:cfswop:550</a>.</p>
+<div id="ref-Muravyev2016">
+<p>Muravyev, Dmitriy, and Xuechuan (Charles) Ni. 2019. “Why do option returns change sign from day to night?” SSRN Scholarly Paper. <em>Journal of Financial Economics</em>, no. ID 2820264 (September). <a href="https://doi.org/10.1016/j.jfineco.2018.12.006">https://doi.org/10.1016/j.jfineco.2018.12.006</a>.</p>
+</div>
+<div id="ref-Muravyev2015">
+<p>Muravyev, Dmitriy, and Neil D. Pearson. 2015. “Option Trading Costs Are Lower than You Think.” <em>SSRN Electronic Journal</em>. <a href="https://doi.org/10.2139/ssrn.2580548">https://doi.org/10.2139/ssrn.2580548</a>.</p>
+</div>
+<div id="ref-Schneider2015">
+<p>Schneider, Paul, and Fabio Trojani. 2019. “Divergence and the Price of Uncertainty.” <em>Journal of Financial Econometrics</em> 17 (3): 341–96. <a href="https://doi.org/10.1093/jjfinec/nby021">https://doi.org/10.1093/jjfinec/nby021</a>.</p>
+</div>
+<div id="ref-Schneider2016a">
+<p>Schneider, Paul, Christian Wagner, and Josef Zechner. 2016. “Low Risk Anomalies?” <em>SSRN Electronic Journal</em>. <a href="https://doi.org/10.2139/ssrn.2858933">https://doi.org/10.2139/ssrn.2858933</a>.</p>
 </div>
 <div id="ref-schreindorfer2014tails">
 <p>Schreindorfer, David. 2014. “Tails, Fears, and Equilibrium Option Prices.” Available at SSRN: https://ssrn.com/abstract=2358157.</p>
 </div>
 <div id="ref-segal2015good">
-<p>Segal, Gill, Ivan Shaliastovich, and Amir Yaron. 2015. “Good and Bad Uncertainty: Macroeconomic and Financial Market Implications.” <em>Journal of Financial Economics</em> 117 (2): 369–97.</p>
+<p>Segal, Gill, Ivan Shaliastovich, and Amir Yaron. 2015. “Good and bad uncertainty: Macroeconomic and financial market implications.” <em>Journal of Financial Economics</em> 117 (2): 369–97.</p>
 </div>
 <div id="ref-tsai2016rare">
-<p>Tsai, Jerry, and Jessica A. Wachter. 2016. “Rare Booms and Disasters in a Multisector Endowment Economy.” In <em>Review of Financial Studies</em>, 29:1113–69. 5. doi:<a href="https://doi.org/10.1093/rfs/hhv074">10.1093/rfs/hhv074</a>.</p>
+<p>Tsai, Jerry, and Jessica A. Wachter. 2016. “Rare Booms and Disasters in a Multisector Endowment Economy.” In <em>Review of Financial Studies</em>, 29:1113–69. 5. <a href="https://doi.org/10.1093/rfs/hhv074">https://doi.org/10.1093/rfs/hhv074</a>.</p>
 </div>
 </div>
 </section>
     </div>
   </div>
 
-  <script src="sofie-2018-25min_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
-  <script src="sofie-2018-25min_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+  <script src="fma-derivs-2019-30min_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="fma-derivs-2019-30min_files/reveal.js-3.3.0.1/js/reveal.js"></script>
 
   <script>
 
@@ -1303,7 +1972,7 @@ no rebalancing
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'sofie-2018-25min_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'fma-derivs-2019-30min_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
         ]
       });
     </script>
