@@ -124,6 +124,11 @@ Date: 3/25/2016
   text-align: center;
 }
 
+.reveal .centered-table{
+  width: 90%;
+  margin: 0 auto;
+}
+
 /*about fonts*/
 
 .reveal {
