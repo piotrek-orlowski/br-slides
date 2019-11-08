@@ -458,7 +458,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 <section id="section" class="slide level1">
 <h1></h1>
-<p><img src="img/Signature_carree_Web_HEC_Montreal_541.png" width="424" /></p>
+<p><img src="img/Signature_carree_Web_HEC_Montreal_541.png" width="150" /></p>
 <h1 style="margin-top: 0%; font-weight: bold; font-size: 2.6em">
 On the nature of jump risk premia
 </h1>
@@ -504,9 +504,41 @@ Swiss Finance Institute
 </div>
 </div>
 </section>
+<section id="agenda" class="slide level1">
+<h1>Agenda</h1>
+<h2 id="evidence-of-jump-premia" class="bold cb_purple">Evidence of jump premia</h2>
+<ul>
+<li>continuous-time models fitted to low-frequency data</li>
+<li>analysis of short-maturity options (still too long!)</li>
+</ul>
+<h2 id="what-are-jumps" class="bold cb_purple one-em-top">What are jumps?</h2>
+<ul>
+<li>intraday discontinuities?</li>
+<li>overnight returns (frictions, liquidity)?</li>
+</ul>
+<h2 id="is-there-a-premium-for-jumps-in-high-frequency-returns" class="bold cb_dark_orange one-em-top">Is there a premium for jumps in high-frequency returns?</h2>
+<ul>
+<li>examine continuous trading during market hours</li>
+</ul>
+<h2 id="where-do-option-implied-jump-premia-come-from" class="bold cb_dark_orange one-em-top">Where do option-implied jump premia come from?</h2>
+<ul>
+<li>examine profits around non-trading periods
+<ul>
+<li>no options / only futures</li>
+<li>no more pure jump interpretation</li>
+</ul></li>
+<li>aversion to hedging restrictions or mispricing?</li>
+</ul>
+</section>
 <section id="core-results" class="slide level1">
 <h1>Core results</h1>
-<h3 id="pricing-of-jump-skew-risk" class="red bold">Pricing of <span style="color: black">jump skew</span> risk:</h3>
+<h3 id="model-free-strategy-that-pays-the-realized-skew-of-jumps-at-settlement" class="bold cb_dark_orange">Model-free strategy that pays the <span style="color: black">realized skew of jumps</span> at settlement</h3>
+<ul>
+<li>Dynamic option trading</li>
+<li>Fully non-parametric investigation of jump skew pricing</li>
+<li>How to interpret dynamic option trading</li>
+</ul>
+<h3 id="pricing-of-jump-skew-risk" class="cb_dark_orange bold one-em-top">Pricing of <span style="color: black">jump skew</span> risk:</h3>
 <ul>
 <li><strong>Not present</strong> in daytime option trading
 <ul>
@@ -517,14 +549,6 @@ Swiss Finance Institute
 <li>but is it mispricing?</li>
 </ul></li>
 <li>Different from the pricing of <strong>variance risk</strong></li>
-</ul>
-<p>
-</p>
-<h3 id="model-free-strategy-that-pays-a-functional-of-the-path-of-jumps-at-settlement" class="bold red">Model-free strategy that pays a <span style="color: black">functional of the path of jumps</span> at settlement</h3>
-<ul>
-<li>Dynamic option trading</li>
-<li>Fully non-parametric investigation of jump skew pricing</li>
-<li>How to interpret dynamic option trading</li>
 </ul>
 <!-- # Core  insight -->
 <!-- There exists a **dynamic option trading strategy** whose settlement payoff at maturity **equals** the cumulative **jump skewness** of returns. -->
@@ -538,7 +562,7 @@ Swiss Finance Institute
 </section>
 <section id="motivation-theoretical" class="slide level1">
 <h1>Motivation – theoretical</h1>
-<h2 id="skewness-and-preferences" class="red bold">Skewness and preferences</h2>
+<h2 id="skewness-and-preferences" class="cb_dark_orange bold">Skewness and preferences</h2>
 <ul>
 <li><span class="citation" data-cites="Kraus1976">Kraus and Litzenberger (1976)</span>, <span class="citation" data-cites="arditti1967risk">Arditti (1967)</span>
 <ul>
@@ -546,33 +570,25 @@ Swiss Finance Institute
 <li>with systematic skewness: low returns for positively skewed payoffs.</li>
 </ul></li>
 </ul>
-<h2 id="jumps-and-asset-pricing" class="red bold">Jumps and asset pricing</h2>
+<h2 id="jumps-and-asset-pricing" class="cb_dark_orange bold one-em-top">Jumps and asset pricing</h2>
 <ul>
-<li><span class="citation" data-cites="barro2006rare">Barro (2006)</span>, <span class="citation" data-cites="barro2008macroeconomic">Barro and Ursúa (2008)</span>
+<li><span class="citation" data-cites="drechsler2013uncertainty">Drechsler (2013)</span>, <span class="citation" data-cites="schreindorfer2014tails">Schreindorfer (2014)</span>, <span class="citation" data-cites="segal2015good">Segal, Shaliastovich, and Yaron (2015)</span>
 <ul>
-<li>rare consumption disasters explain EPP</li>
-</ul></li>
-<li><span class="citation" data-cites="schreindorfer2014tails">Schreindorfer (2014)</span>
-<ul>
-<li>uncertainty shifts generate returns jumps, option smirk</li>
-</ul></li>
-<li><span class="citation" data-cites="segal2015good">Segal, Shaliastovich, and Yaron (2015)</span>
-<ul>
-<li>differential impact of positive and negative uncertainty</li>
-</ul></li>
-<li><span class="citation" data-cites="tsai2016rare">Tsai and Wachter (2016)</span>
-<ul>
-<li>systematic boom/disaster risk impacts cross-section</li>
+<li>uncertainty shifts and return jumps</li>
 </ul></li>
 <li><span class="citation" data-cites="harvey2002skewness">Harvey and Siddique (2002)</span>, <span class="citation" data-cites="Schneider2016a">Schneider, Wagner, and Zechner (2016)</span>
 <ul>
-<li>conditional skewness explains cross-sectional anomalies.</li>
+<li>conditional skewness explains cross-sectional anomalies</li>
+</ul></li>
+<li><span class="citation" data-cites="barro2006rare">Barro (2006)</span>, <span class="citation" data-cites="barro2008macroeconomic">Barro and Ursúa (2008)</span>, <span class="citation" data-cites="tsai2016rare">Tsai and Wachter (2016)</span>, <span class="citation" data-cites="Barro2019">Barro and Liao (2019)</span>
+<ul>
+<li>rare consumption disasters</li>
 </ul></li>
 </ul>
 </section>
 <section id="motivation-empirical" class="slide level1">
 <h1>Motivation – empirical</h1>
-<h2 id="tail-risk-neq-volatility-risk" class="red bold">Tail risk <span class="math inline">\(\neq\)</span> volatility risk</h2>
+<h2 id="tail-risk-neq-volatility-risk" class="cb_dark_orange bold">Tail risk <span class="math inline">\(\neq\)</span> volatility risk</h2>
 <ul>
 <li><span class="citation" data-cites="Andersen2013">Andersen, Todorov, and Fusari (2015)</span>, <span class="citation" data-cites="Andersen2017">Andersen, Fusari, and Todorov (2017)</span>
 <ul>
@@ -592,7 +608,7 @@ Swiss Finance Institute
 <li><span class="math inline">\(\mathbb{P}\)</span>-measure tail risks evolve over time.</li>
 </ul></li>
 </ul>
-<h2 id="asymmetric-pricing-of-tail-risks" class="red bold">Asymmetric pricing of tail risks</h2>
+<h2 id="asymmetric-pricing-of-tail-risks" class="cb_dark_orange bold one-em-top">Asymmetric pricing of tail risks</h2>
 <ul>
 <li><span class="citation" data-cites="Andersen2017">Andersen, Fusari, and Todorov (2017)</span>:
 <ul>
@@ -607,7 +623,7 @@ Swiss Finance Institute
 </section>
 <section id="motivation-empirical-1" class="slide level1">
 <h1>Motivation – empirical</h1>
-<h2 id="jump-risk-priced-risk" class="red bold">Jump risk <span class="math inline">\(=\)</span> priced risk?</h2>
+<h2 id="jump-risk-priced-risk" class="cb_dark_orange bold">Jump risk <span class="math inline">\(=\)</span> priced risk?</h2>
 <ul>
 <li><span class="citation" data-cites="Kelly2014">Kelly and Jiang (2014)</span>, <span class="citation" data-cites="Bollerslev2016">Bollerslev, Li, and Todorov (2016)</span>:
 <ul>
@@ -619,35 +635,12 @@ Swiss Finance Institute
 <li><em>only</em> jump component of S&amp;P500 priced.</li>
 </ul></li>
 </ul>
-<h2 id="other-important-facts" class="red bold">Other important facts</h2>
+<h2 id="other-important-facts" class="cb_dark_orange bold one-em-top">Other important facts</h2>
 <ul>
 <li><span class="citation" data-cites="bollerslev2015tail">Bollerslev, Todorov, and Xu (2015)</span>, <span class="citation" data-cites="Kelly2014">Kelly and Jiang (2014)</span>:
 <ul>
 <li>Price of jump risk predicts S&amp;P500 returns.</li>
 </ul></li>
-</ul>
-</section>
-<section id="agenda" class="slide level1">
-<h1>Agenda</h1>
-<h2 id="is-there-a-premium-for-the-risk-of-jumps-in-high-frequency-returns" class="bold purple">Is there a premium for the risk of jumps in high-frequency returns?</h2>
-<ul>
-<li>examine continuous trading during market hours
-<ul>
-<li>this replicates the dominant modeling setup</li>
-</ul></li>
-</ul>
-<p>
-<br>
-</p>
-<h2 id="where-do-option-implied-jump-premia-come-from" class="bold purple">Where do option-implied jump premia come from?</h2>
-<ul>
-<li>examine profits around non-trading periods
-<ul>
-<li>no continuous option trading</li>
-<li>but continuous futures trading</li>
-<li>no more pure jump interpretation</li>
-</ul></li>
-<li>aversion to hedging restrictions or mispricing?</li>
 </ul>
 </section>
 <section id="section-2" class="slide level1">
@@ -667,12 +660,12 @@ Swiss Finance Institute
 <p><span class="math display">\[
   \int_t^T \int_{\mathbb{R}\setminus \{0\}} \left( x^3 + O(x^4) \right) \, \nu_s(dx,ds)
 \]</span></p>
-<h3 id="use-divergence-based-measures" class="bold red">Use divergence-based measures</h3>
+<h3 id="use-divergence-based-measures" class="bold cb_dark_orange">Use divergence-based measures</h3>
 <ul>
 <li>Family of realized variation measures defined in <span class="citation" data-cites="Schneider2015">Schneider and Trojani (2019)</span>,</li>
 <li>Statistical inference for divergence in <span class="citation" data-cites="khajavi2015realized">Khajavi (2017)</span>.</li>
 </ul>
-<h3 id="few-assumptions" class="green bold">Few assumptions</h3>
+<h3 id="few-assumptions" class="cb_green bold one-em-top">Few assumptions</h3>
 <ul>
 <li>Trading results <strong>do not hinge</strong> on semi-martingale world,</li>
 <li>Only the “jump” interpretation does.</li>
@@ -680,15 +673,15 @@ Swiss Finance Institute
 </section>
 <section id="measurement-of-jump-skewness-1" class="slide level1">
 <h1>Measurement of jump skewness</h1>
-<h3 id="realized-variance-divergence-for-p0" class="bold purple">Realized variance (divergence for <span class="math inline">\(p=0\)</span>):</h3>
+<h3 id="realized-variance-divergence-for-p0" class="bold cb_purple">Realized variance (divergence for <span class="math inline">\(p=0\)</span>):</h3>
 <ul>
 <li>realized divergence (<span class="math inline">\(p=0\)</span>) <span class="math inline">\(\approx\)</span> 1/2 realized variance (<span class="math inline">\(\color{red}{=}\)</span> if no jumps) + <span class="math inline">\(f(p,\text{jump})\)</span></li>
 <li>consider VIX index; VIX<sup>2</sup>: price of <span class="citation" data-cites="itakura1968analysis">Itakura and Saito (1968)</span> divergence</li>
-<li>VIX<sup>2</sup>-based <em>variance swap</em>.</li>
+<li>VIX<sup>2</sup>-based <strong>variance swap</strong> with payoff <span class="math inline">\(R - 1 -\log{R} \approx O(\sigma^2)\)</span>.</li>
 </ul>
 <p style="padding-top: 0px">
 </p>
-<h3 id="realized-jump-skew" class="bold green">Realized jump skew:</h3>
+<h3 id="realized-jump-skew" class="bold cb_green">Realized jump skew:</h3>
 <ul>
 <li>sensitivity of realized divergence to choice of <span class="math inline">\(p\)</span>: <span class="math inline">\(\frac{\partial D_p(r)}{\partial p}\)</span>.</li>
 </ul>
@@ -698,9 +691,9 @@ Swiss Finance Institute
 <p><span class="math display">\[
 r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 \]</span></p>
-<h3 id="jump-skew-variation" class="red bold">Jump skew variation:</h3>
+<h3 id="jump-skew-variation" class="cb_dark_orange bold">Jump skew variation:</h3>
 <p><span class="math display">\[
-  S_{t,T} := \sum_{i=1}^N \left( \underbrace{e^{r_i}-1 - r_i}_{\text{realized divergence}} -\frac{r_i^2}{2} \right) \overset{\mathbb{P}}{\longrightarrow} \sum_{t \leq s \leq T} \frac{1}{6} \left(\Delta J_s\right)^3 + O(J_s)^4
+  S_{t,T} := \sum_{i=1}^N \left( \underbrace{\color{#0072B2}e^{r_i}-1 - r_i}_{\text{VIX}^2\text{ payoff}} -\frac{r_i^2}{2} \right) \overset{\mathbb{P}}{\longrightarrow} \sum_{t \leq s \leq T} \frac{1}{6} \left(\Delta J_s\right)^3 + O(J_s)^4
 \]</span></p>
 </section>
 <section id="section-3" class="slide level1">
@@ -726,20 +719,20 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 <li>sparse maturities</li>
 <li>near continuum of strikes.</li>
 </ul>
-<h3 id="non-linear-trading" class="bold green">Non-linear trading:</h3>
+<h3 id="non-linear-trading" class="bold cb_green one-em-top">Non-linear trading:</h3>
 <p>Exposure to divergence of function of forward price <span class="math inline">\(\color{green}{\phi}(F_T)\)</span> available through <span class="citation" data-cites="Breeden1978">Breeden and Litzenberger (1978)</span> and <span class="citation" data-cites="Carr2001b">Carr and Madan (2001)</span>: <span class="math display">\[
   D_{\color{green}{\phi}}(F_T,F_t) := \color{green}{\phi}(F_T) \color{black}- \color{green}{\phi}(F_t)  \color{black}- \color{green}{\phi}&#39;(F_t)\color{black}(F_T- F_t) = \int_0^{\infty} \color{green}{\phi}&#39;&#39;(K) \color{red}{O(F_T; K, F_t)} \color{black}dK
 \]</span></p>
-<h3 id="existing-literature-semi-static-strategies" class="bold purple">Existing literature: semi-static strategies</h3>
+<h3 id="existing-literature-semi-static-strategies" class="bold cb_purple">Existing literature: semi-static strategies</h3>
 <p><span class="math display">\[
   D_{\phi}(F_T,F_t) + \sum_i \delta_i (F_T - F_i)
 \]</span></p>
-<h3 id="replication-of-s_tt-not-possible-with-semi-static-strategies" class="red bold">Replication of <span class="math inline">\(S_{t,T}\)</span> not possible with semi-static strategies</h3>
+<h3 id="replication-of-s_tt-not-possible-with-semi-static-strategies" class="cb_dark_orange bold">Replication of <span class="math inline">\(S_{t,T}\)</span> not possible with semi-static strategies</h3>
 <p>There is no <span class="math inline">\(\phi\)</span> and <span class="math inline">\(\{\delta\}_{i=1}^{N_T}\)</span> such that <span class="math inline">\(S_{t,T} = D_{\phi}(F_T,F_t) + \sum_i \delta_i (F_T - F_i)\)</span>.</p>
 </section>
 <section id="trading-strategy-1" class="slide level1">
 <h1>Trading strategy</h1>
-<h3 id="express-s_tt-as-sum-of-option-payoffs-between-f_t_i-and-f_t" class="bold red">Express <span class="math inline">\(S_{t,T}\)</span> as sum of option payoffs between <span class="math inline">\(F_{t_i}\)</span> and <span class="math inline">\(F_T\)</span>:</h3>
+<h3 id="express-s_tt-as-sum-of-option-payoffs-between-f_t_i-and-f_t" class="bold cb_dark_orange">Express <span class="math inline">\(S_{t,T}\)</span> as sum of option payoffs between <span class="math inline">\(F_{t_i}\)</span> and <span class="math inline">\(F_T\)</span>:</h3>
 <p><span class="math display">\[
   S_{t,T}= \sum_{i=1}^N \left( e^{r_i}-1 - r_i -\frac{r_i^2}{2} \right) =  \underbrace{\phi_s(F_T,F_{0})}_{\color{green}{\bigstar}} + \sum_i \underbrace{\gamma_{i}\phi_v(F_T,F_i)}_{\color{purple}{\bigstar}} + \underbrace{\delta_i (F_T - F_i)}_{\color{orange}{\bigstar}}.
 \]</span></p>
@@ -753,48 +746,36 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 </section>
 <section id="features-of-the-trading-strategy" class="slide level1">
 <h1>Features of the trading strategy</h1>
-<h2 id="arbitrary-trading-frequency" class="bold red">Arbitrary trading frequency</h2>
+<h2 id="arbitrary-trading-frequency" class="bold cb_dark_orange">Arbitrary trading frequency</h2>
 <ul>
 <li>if options and underlying traded continuously</li>
-<li>jump interpretation at sufficiently high frequencies
-<p>
-</p></li>
+<li>jump interpretation at sufficiently high frequencies</li>
 </ul>
-<h2 id="arbitrary-trading-horizon" class="bold red">Arbitrary trading horizon</h2>
+<h2 id="arbitrary-trading-horizon" class="bold cb_dark_orange one-em-top">Arbitrary trading horizon</h2>
 <ul>
-<li>close positions appropriately, retain interpretation
-<p>
-</p></li>
+<li>close positions appropriately, retain interpretation</li>
 </ul>
-<h2 id="analytical-convenience" class="bold red">Analytical convenience</h2>
+<h2 id="analytical-convenience" class="bold cb_dark_orange one-em-top">Analytical convenience</h2>
 <ul>
-<li>relatively easy to calculate moments in affine models
-<p>
-</p></li>
+<li>relatively easy to calculate moments in affine models</li>
 </ul>
 </section>
 <section id="features-of-the-trading-strategy-1" class="slide level1">
 <h1>Features of the trading strategy</h1>
-<h2 id="arbitrary-trading-frequency-1" class="bold red">Arbitrary trading frequency</h2>
+<h2 id="arbitrary-trading-frequency-1" class="bold cb_dark_orange">Arbitrary trading frequency</h2>
 <ul>
 <li>if options and underlying traded continuously</li>
-<li>jump interpretation at sufficiently high frequencies
-<p>
-</p></li>
+<li>jump interpretation at sufficiently high frequencies</li>
 </ul>
-<h2 id="arbitrary-trading-horizon-1" class="bold red">Arbitrary trading horizon</h2>
+<h2 id="arbitrary-trading-horizon-1" class="bold cb_dark_orange one-em-top">Arbitrary trading horizon</h2>
 <ul>
-<li>close positions appropriately, retain interpretation
-<p>
-</p></li>
+<li>close positions appropriately, retain interpretation</li>
 </ul>
-<h2 id="analytical-convenience-1" class="bold red">Analytical convenience</h2>
+<h2 id="analytical-convenience-1" class="bold cb_dark_orange one-em-top">Analytical convenience</h2>
 <ul>
 <li>relatively easy to calculate moments in affine models
 <ul>
-<li>anyone interested?
-<p>
-</p></li>
+<li>anyone interested?</li>
 </ul></li>
 </ul>
 </section>
@@ -804,51 +785,33 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 <p>
 <br>
 </p>
-<p>
-</p>
-<h4 id="mathbbemathbbps_tt-estimate-from-high-frequency-data"><span class="math inline">\(\mathbb{E}^{\mathbb{P}}[S_{t,T}]\)</span> : estimate from <strong>high-frequency</strong> data</h4>
-<h4 id="mathbbemathbbqs_tt-we-dont-know-the-future-prices-of-options"><span class="math inline">\(\mathbb{E}^{\mathbb{Q}}[S_{t,T}]\)</span> : we don’t know the <strong>future prices of options</strong></h4>
+<h4 id="mathbbemathbbps_tt-estimate-from-high-frequency-data" class="one-em-top"><span class="math inline">\(\mathbb{E}^{\mathbb{P}}[S_{t,T}]\)</span> : estimate from <strong>high-frequency</strong> data</h4>
+<h4 id="mathbbemathbbqs_tt-we-dont-know-the-future-prices-of-options-that-we-will-have-to-trade"><span class="math inline">\(\mathbb{E}^{\mathbb{Q}}[S_{t,T}]\)</span> : we don’t know the <strong>future prices of options</strong> that we <strong>will have to trade</strong></h4>
 </section>
 <section id="jump-skew-premium" class="slide level1">
 <h1>Jump skew premium</h1>
-<h3 id="semi-static-strategies-e.g.-variance-swaps" class="bold purple">Semi-static strategies (e.g. variance swaps):</h3>
+<h4 id="let-vs_ttau-be-variance-swap-with-tau-years-to-maturity" class="bold cb_dark_orange">Let <span class="math inline">\(VS_t(\tau)\)</span> be <strong>variance swap</strong> with <span class="math inline">\(\tau\)</span> years to maturity</h4>
 <ul>
-<li>floating leg — realized variation measure <span class="math inline">\(\equiv\)</span> fwd + option settlement,</li>
-<li>fixed leg — <span style="color: purple">swap rate</span> — <span class="math inline">\(\mathbb{E}^{\mathbb{Q}_T}_t[\phi(F_T) - \phi(F_t)]\)</span>.</li>
+<li>swap leg involves a series of variance swaps</li>
 </ul>
-<h3 id="dynamic-strategies" class="bold green">Dynamic strategies:</h3>
-<ul>
-<li>floating leg — as above,</li>
-<li>replicating leg — two components
-<ul>
-<li>static skew swap rate (as if there was no extra hedging)</li>
-<li><span style="color: green">weight <span style="font-weight: bold">integrated</span> wrt <span class="math inline">\(\Delta\)</span> SR </span>, <span class="math inline">\(\int_t^T \color{orange} \gamma_s \color{black} d \color{blue}\mathbb{E}^{\mathbb{Q}_T}_s[\phi(F_T) - \phi(F_s)]\)</span>, <!-- - replication cost now known at $t$: option rebalancing comes into play. --></li>
-</ul></li>
-</ul>
-<h3 id="interpreting-the-jump-skew-premium" class="bold red">Interpreting the jump skew premium</h3>
-<p>With MGF of log-return <span class="math inline">\(\varphi_t(p,\tau- t) \equiv \mathbb{E}_t^{\mathbb{Q}}\left[ e^{p\log{F_{\tau}/F_t}} \right]\)</span>: <span class="math display">\[
-  \mathbb{E}^{\mathbb{P}}_t[S_{t,T}] - \left[\underbrace{-\frac{1}{2}\varphi&#39;&#39;_t(0,T - t) - \varphi&#39;_t(0, T - t)}_{\color{green}{\bigstar}} - \underbrace{\int_t^{T} \color{orange}\log{\frac{F_s}{F_t}}\color{black} d \color{blue} \varphi&#39;_s(0,T - s)}_{\color{purple}{\bigstar}}\right]
-\]</span></p>
-<p>Hedging exposure to jump skewness exposes trader to <span style="color: blue">volatility price</span> <span style="color: red"><strong>drivers</strong></span>.</p>
-</section>
-<section id="interpreting-the-jump-skew-premium-1" class="slide level1">
-<h1>Interpreting the jump skew premium</h1>
 <p><span class="math display">\[
-  \mathbb{E}^{\mathbb{P}}_t[S_{t,T}] - \left[\underbrace{-\frac{1}{2}\varphi&#39;&#39;_t(0,T - t) - \varphi&#39;_t(0, T - t)}_{\color{green}{\bigstar}} - \underbrace{\int_t^{T} \color{orange} \log{\frac{F_s}{F_t}}\color{black}  d \color{blue}\varphi&#39;_s(0,T - s)}_{\color{purple}{\bigstar}}\right]
+  \mathbb{E}^{\mathbb{P}}[S_{t,T}] - \mathbb{E}^{\mathbb{Q}}\left[ -\frac{1}{2}\log\left(\frac{F_T}{F_t}\right)^2 -\log\left(\frac{F_T}{F_t}\right)\right] - \underbrace{\int_t^{T} \mathbb{E}^{\mathbb{P}}\left[ \color{orange}\log{\frac{F_s}{F_t}}\color{black} d \color{blue} VS_s(T - s)\right]}_{\color{purple}{\bigstar}} 
 \]</span></p>
-<p><span class="math inline">\(\color{purple}{\bigstar}\)</span> <span class="math inline">\(\color{blue} -\varphi&#39;_s(0,T - s)\)</span> — price of variance swap</p>
-<p><span class="math inline">\(\color{purple}{\bigstar}\)</span> <span class="math inline">\(\color{orange} \log{{F_s}/{F_t}}\)</span> — position in variance swap.</p>
-<h4 id="if-we-could-trade-forwards-on-vs-this-term-would-have-mathbbq_t-expectation-0." class="bold purple">If we could trade forwards on VS: this term would have <span class="math inline">\(\mathbb{Q}_T\)</span>-expectation 0.</h4>
-<h4 id="but-we-cant.-option-rebalancing-exposes-investors-to-state-variable-risk." class="red bold">But we can’t. Option rebalancing exposes investors to state variable risk.</h4>
-<h3 id="however-reasonable-definition-of-premium" class="bold">However, reasonable definition of premium</h3>
+<h4 id="if-we-could-trade-forwards-on-vs-this-term-would-have-mathbbq_t-expectation-0." class="bold cb_purple">If we could trade forwards on VS: this term would have <span class="math inline">\(\mathbb{Q}_T\)</span>-expectation 0.</h4>
+<h4 id="but-we-cant.-option-rebalancing-exposes-investors-to-state-variable-risk." class="cb_dark_orange bold">But we can’t. Option rebalancing exposes investors to state variable risk.</h4>
+<h3 id="however-reasonable-definition-of-jump-skew-premium" class="bold cb_green">However, reasonable definition of jump skew premium</h3>
 <p>Consider <span class="citation" data-cites="Merton1976">Merton (1976)</span> -type models</p>
 <ul>
-<li><span style="color: blue"><strong>Theoretical premium</strong></span>: <span class="math inline">\(\mathbb{E}^{\mathbb{P}}[S_{t,T}] - \mathbb{E}^{\mathbb{Q}}[S_{t,T}] = \lambda (T-t) \color{blue} \mathbb{E}^{\mathbb{Q}}[J^3]\)</span></li>
-<li>Discrepancy between <span style="color: red"><strong>tradable</strong></span> and <span style="color: blue"><strong>theoretical</strong></span> premium depends on size of VRP:</li>
+<li><span class="cb_blue"><strong>Theoretical premium</strong></span>: <span class="math inline">\(\mathbb{E}^{\mathbb{P}}[S_{t,T}] - \mathbb{E}^{\mathbb{Q}}[S_{t,T}] = \lambda (T-t) \color{blue} \mathbb{E}^{\mathbb{Q}}[J^3]\)</span></li>
+<li>Discrepancy between <span class="cb_orange"><strong>tradable</strong></span> and <span class="cb_blue"><strong>theoretical</strong></span> premium depends on maturity: <span class="math display">\[
+\color{BurntOrange}(T-t)^2 \color{black}\mathbb{E}^{\mathbb{Q}}[d \ln F_s]\left(\mathbb{E}^{\mathbb{\color{red}P}}[d \ln F_s] - \mathbb{E}^{\mathbb{\color{blue}Q}}[d \ln F_s]  \right)
+\]</span>
+<div style="display: inline-block; float: right">
+<p style="background-color: #56B4E9">
+<a href="#//interpreting-the-jump-skew-premium-details">details</a>
+</p>
+</div></li>
 </ul>
-<p><span class="math display">\[
-  (T-t)^2 \mathbb{E}^{\mathbb{Q}}[d \ln F_s]\left(\mathbb{E}^{\mathbb{\color{red}P}}[d \ln F_s] - \mathbb{E}^{\mathbb{\color{blue}Q}}[d \ln F_s]  \right)
-\]</span></p>
 </section>
 <section id="section-4" class="slide level1">
 <h1></h1>
@@ -869,7 +832,7 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 </section>
 <section id="profits-from-trading-return-skew" class="slide level1">
 <h1>Profits from trading return skew</h1>
-<h3 id="during-trading-hours-and-around-non-trading-periods">During trading hours and around non-trading periods</h3>
+<h3 id="during-trading-hours-and-around-non-trading-periods" class="bold cb_purple">During trading hours and around non-trading periods</h3>
 <ul>
 <li>Lower profits during trading hours</li>
 <li>Profits over non-trading periods higher in turbulent markets
@@ -879,18 +842,15 @@ r_i := \log{F_{t_i}} - \log{F_{t_{i-1}}}.
 </ul></li>
 </ul>
 <p><img src="fma-derivs-2019-30min_files/figure-revealjs/time-series-plots-1.png" width="864" style="display: block; margin: auto;" /></p>
+<h3 id="magnitude-margin-for-1m-skew-notional-sim-10k-variance-notional" class="bold cb_dark_orange">Magnitude: margin for $1m skew notional <span class="math inline">\(\sim\)</span> $10k variance notional</h3>
+<div style="display: inline-block; float: right">
+<p style="background-color: #56B4E9">
+<a href="#//profits-from-trading-return-variance">variance</a>, <a href="#//capital-requirements">margin requirements</a>
+</p>
+</div>
 </section>
 <section id="profits-from-trading-return-skew-1" class="slide level1">
 <h1>Profits from trading return skew</h1>
-<h3 id="magnitudes" class="bold red">Magnitudes:</h3>
-<ul>
-<li>when you calculate VRP, it’s <strong>dollars</strong> for variance of <strong>return</strong></li>
-<li>skew payoff measures dollars per <span style="color: red"><strong>skewness</strong></span> or return
-<ul>
-<li>rescale values by <span class="math inline">\(10^6\)</span> for legibility.</li>
-</ul></li>
-<li>margin requirements are here!</li>
-</ul>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1010,18 +970,18 @@ yes
 </tr>
 </tbody>
 </table>
-<h3 id="first-conclusions" class="bold red">First conclusions</h3>
+<h3 id="first-conclusions" class="bold cb_dark_orange">First conclusions</h3>
 <ul>
-<li><span style="color: red">No compensation</span> for jump skew risk in <span style="color: red">continuous trading</span>,</li>
-<li><span style="color: blue">Positive premium</span> for holding skew positions <span style="color: blue">over non-trading periods</span>
+<li><span class="cb_orange">No compensation</span> for jump skew risk in <span class="cb_orange">continuous trading</span>,</li>
+<li><span class="cb_blue">Positive premium</span> for holding skew positions <span class="cb_blue">over non-trading periods</span>
 <ul>
-<li>Same effect for <span style="color: purple"><strong>shorting variance</strong></span></li>
+<li>Same effect for <span class="cb_purple"><strong>shorting variance</strong></span></li>
 </ul></li>
 </ul>
 </section>
 <section id="further-questions" class="slide level1">
 <h1>Further questions</h1>
-<h3 id="long-skew-vs-short-variance-trades" class="bold red">Long skew vs short variance trades</h3>
+<h3 id="long-skew-vs-short-variance-trades" class="bold cb_dark_orange">Long skew vs short variance trades</h3>
 <ul>
 <li>Both strategies short put options
 <ul>
@@ -1029,7 +989,7 @@ yes
 </ul></li>
 <li>Are deeper OTM options sufficiently different to bring about a different risk exposure?</li>
 </ul>
-<h3 id="known-risk-factors" class="bold red">Known risk factors</h3>
+<h3 id="known-risk-factors" class="bold cb_dark_orange">Known risk factors</h3>
 <ul>
 <li>To what extent can we explain these profits with standard factors?
 <ul>
@@ -1041,7 +1001,7 @@ yes
 <li>Important in empirical studies (<span class="citation" data-cites="He2017">He, Kelly, and Manela (2017)</span>)</li>
 </ul></li>
 </ul>
-<h3 id="mispricing-vs-risk" class="bold red">Mispricing vs risk</h3>
+<h3 id="mispricing-vs-risk" class="bold cb_dark_orange">Mispricing vs risk</h3>
 <ul>
 <li>Is this strategy a good hedge of return skew?</li>
 <li>Are premia predictable by measures of return variation?</li>
@@ -1049,19 +1009,19 @@ yes
 </section>
 <section id="spanning-by-known-risk-factors" class="slide level1">
 <h1>Spanning by known risk factors</h1>
-<h3 id="regress-skew-trading-profits-s_t-across-non-trading-periods-on" class="bold red">Regress skew trading profits <span style="color: purple"><span class="math inline">\(s_t\)</span></span> across non-trading periods on:</h3>
+<h3 id="regress-skew-trading-profits-s_t-across-non-trading-periods-on" class="bold cb_dark_orange">Regress skew trading profits <span class="cb_purple"><span class="math inline">\(s_t\)</span></span> across non-trading periods on:</h3>
 <ul>
 <li>contemporary <span style="color: orange">market return <span class="math inline">\(r_{mt}\)</span></span>,</li>
-<li>contemporary return on the <span style="color: blue">primary dealer</span> (intermediary) portfolio <span style="color: blue"><span class="math inline">\(r_{dt}\)</span></span>,</li>
-<li>contemporary <span style="color: red">variance profit <span class="math inline">\(v_t\)</span></span>.</li>
+<li>contemporary return on the <span class="cb_blue">primary dealer</span> (intermediary) portfolio <span class="cb_blue"><span class="math inline">\(r_{dt}\)</span></span>,</li>
+<li>contemporary <span class="cb_orange">variance profit <span class="math inline">\(v_t\)</span></span>.</li>
 </ul>
 <p><span class="math display">\[
   s_t = \color{Maroon}\alpha\color{black} + \beta_m r_{mt} + \beta_d r_{dt} + \beta_v v_t + \eta_t
 \]</span></p>
-<h3 id="interpretation" class="bold red">Interpretation</h3>
+<h3 id="interpretation" class="bold cb_dark_orange">Interpretation</h3>
 <ul>
 <li>all three proposed factors are tradable,</li>
-<li>if <span class="math inline">\(\color{Maroon}\alpha\color{black} = 0\)</span>, <span style="color: purple"><span class="math inline">\(s_t\)</span></span> profits are explained by known systematic factors.</li>
+<li>if <span class="math inline">\(\color{Maroon}\alpha\color{black} = 0\)</span>, <span class="cb_purple"><span class="math inline">\(s_t\)</span></span> profits are explained by known systematic factors.</li>
 </ul>
 <!-- ### Measurement error -->
 <!-- - Both variance and skew replicating portfolios are approximate -->
@@ -1268,7 +1228,7 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </table>
 </div>
 <ul>
-<li>Exposure to <span style="color: red"><strong>market risk</strong></span> explains <strong>~30%</strong> of after-hours skew profits,</li>
+<li>Exposure to <span class="cb_orange"><strong>market risk</strong></span> explains <strong>~30%</strong> of after-hours skew profits,</li>
 <li><span style="color:#009E73"><strong>Positive association</strong></span> between profits from <strong>shorting variance</strong> and <strong>skew profits</strong>,
 <ul>
 <li><strong>But</strong> profits from <strong>shorting variance</strong> subsumed by the market return in <span style="color:#CC79A7"><strong>ON</strong></span> trading,</li>
@@ -1276,6 +1236,11 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 <li>Residual <span class="math inline">\(\color{Maroon}\alpha\)</span> in <span style="color:#CC79A7"><strong>ON</strong></span> but <strong>not</strong> <span style="color:#0072B2"><strong>WKND</strong></span> regressions with profits from <strong>shorting variance</strong></li>
 <li>Little space for the <span style="color:#56B4E9;font-weight:900">intermediary risk factor</span>.</li>
 </ul>
+<div style="display: inline-block; float: right">
+<p style="background-color: #56B4E9">
+<a href="#//spanning-of-variance-profits">back</a>
+</p>
+</div>
 </section>
 <section id="spanning-by-known-risk-factors-transaction-costs" class="slide level1">
 <h1>Spanning by known risk factors: transaction costs</h1>
@@ -1469,8 +1434,8 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </table>
 </div>
 <ul>
-<li>Even <strong>modest transaction costs</strong> erase the <strong>risk-adjusted</strong> profitability of <span style="color:#CC79A7"><strong>ON</strong></span> trading,</li>
-<li>In <span style="color:#0072B2"><strong>WKND</strong></span> trading, <strong>no profiability</strong> beyond exposure to <span style="color:red"><strong>standard factors</strong></span>,</li>
+<li><strong>Modest transaction costs</strong> erase the <strong>risk-adjusted</strong> profitability of <span style="color:#CC79A7"><strong>ON</strong></span> trading,</li>
+<li>In <span style="color:#0072B2"><strong>WKND</strong></span> trading, <strong>no profiability</strong> beyond exposure to <span class="cb_orange"><strong>standard factors</strong></span>,</li>
 <li>Real extent of transaction costs hard to judge, lower than posted spreads (<span class="citation" data-cites="Muravyev2015">Muravyev and Pearson (2015)</span>),
 <ul>
 <li>We observe many transactions <strong>within the spread</strong>.</li>
@@ -1479,7 +1444,7 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </section>
 <section id="option-mispricing-vs-risk-based-explanations" class="slide level1">
 <h1>Option mispricing vs risk-based explanations?</h1>
-<h3 id="puzzling-patterns-in-option-returns" class="red bold">Puzzling patterns in option returns</h3>
+<h3 id="puzzling-patterns-in-option-returns" class="cb_dark_orange bold">Puzzling patterns in option returns</h3>
 <ul>
 <li>Options (<strong>puts</strong>!) are very expensive, deliver strongly negative returns
 <ul>
@@ -1487,20 +1452,20 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 <li>negative returns when held over non-trading periods</li>
 </ul></li>
 </ul>
-<h3 id="quantity-vs-price-of-risk-explanations" class="red bold">Quantity vs price of risk explanations?</h3>
+<h3 id="quantity-vs-price-of-risk-explanations" class="cb_dark_orange bold one-em-top">Quantity vs price of risk explanations?</h3>
 <ul>
-<li>It’s <span style="color:red">not quantity</span>
+<li>It’s <span class="cb_orange">not quantity</span>
 <ul>
 <li>Returns in non-trading periods have lower variance than during market hours</li>
 <li>We see NT period returns are less risky by all imaginable measures</li>
 </ul></li>
-<li>It’s <span style="color:red">not price</span>
+<li>It’s <span class="cb_orange">not price</span>
 <ul>
 <li>No patterns in returns on options with different features (and thus exposures)</li>
 </ul></li>
 <li>All findings in <span class="citation" data-cites="Jones2018">Jones and Shemesh (2018)</span>, <span class="citation" data-cites="Muravyev2016">Muravyev and Ni (2019)</span></li>
 </ul>
-<h3 id="our-evidence" class="purple bold">Our evidence</h3>
+<h3 id="our-evidence" class="cb_purple bold one-em-top">Our evidence</h3>
 <ul>
 <li>Mispricing explanation bounded by the extent to which CAPM explains profits,</li>
 <li>The skew strategy is a <strong>good hedge</strong> of <strong>return skewness</strong>,</li>
@@ -1509,11 +1474,11 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </section>
 <section id="hedging-overnight-return-skew" class="slide level1">
 <h1>Hedging overnight return skew</h1>
-<h3 id="payoff-design" class="red bold">Payoff design</h3>
+<h3 id="payoff-design" class="cb_dark_orange bold one-em-top">Payoff design</h3>
 <ul>
 <li>The <strong>settlement</strong> of the options and forwards pays exactly <strong>return skew</strong></li>
 </ul>
-<h3 id="empirically" class="red bold">Empirically</h3>
+<h3 id="empirically" class="cb_dark_orange bold one-em-top">Empirically</h3>
 <ul>
 <li>The <strong>option premia</strong> component is much larger than <strong>settlement</strong>
 <ul>
@@ -1527,59 +1492,53 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 <thead>
 <tr>
 <th style="text-align:left;">
-horizon
+trading period
 </th>
 <th style="text-align:left;">
-quantity
+transaction cost
 </th>
 <th style="text-align:right;">
-cor
+<span class="math inline">\(cor(s_t, r_t^3)\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
 overnight
 </td>
 <td style="text-align:left;">
-profit
+no
 </td>
 <td style="text-align:right;">
-0.5451870
+0.55
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-overnight
-</td>
-<td style="text-align:left;">
-profit_long
+yes
 </td>
 <td style="text-align:right;">
-0.5368903
+0.54
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
 weekend
 </td>
 <td style="text-align:left;">
-profit
+no
 </td>
 <td style="text-align:right;">
-0.7588680
+0.76
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-weekend
-</td>
-<td style="text-align:left;">
-profit_long
+yes
 </td>
 <td style="text-align:right;">
-0.8395925
+0.84
 </td>
 </tr>
 </tbody>
@@ -1587,7 +1546,7 @@ profit_long
 </section>
 <section id="predicting-overnight-skew-profits" class="slide level1">
 <h1>Predicting overnight skew profits</h1>
-<h3 id="temporal-variation" class="red bold">Temporal variation</h3>
+<h3 id="temporal-variation" class="cb_dark_orange bold">Temporal variation</h3>
 <ul>
 <li>Average profitability of after-hours skew profits varies over time
 <ul>
@@ -1710,34 +1669,95 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </section>
 <section id="summary" class="slide level1">
 <h1>Summary</h1>
-<h3 id="first-model-free-strategy-that-pays-a-functional-of-the-path-of-jumps-at-settlement">First model-free strategy that pays a <strong>functional of the path of jumps</strong> at settlement</h3>
+<h3 id="model-free-strategy-that-pays-the-realized-skew-of-jumps-at-settlement-1" class="bold cb_dark_orange">Model-free strategy that pays the <span style="color: black">realized skew of jumps</span> at settlement</h3>
 <ul>
 <li>Dynamic option trading</li>
 <li>Fully non-parametric investigation of jump skew pricing</li>
-<li>Disaggregation of results over arbitrary time periods.d</li>
+<li>How to interpret dynamic option trading</li>
 </ul>
-<h3 id="pricing-of-jump-skew-risk-1">Pricing of <strong>jump skew</strong> risk:</h3>
+<h3 id="pricing-of-jump-skew-risk-1" class="cb_dark_orange bold one-em-top">Pricing of <span style="color: black">jump skew</span> risk:</h3>
 <ul>
-<li>Not present in daytime option trading</li>
-<li>Present in overnight option trading</li>
-<li>Persistent.</li>
+<li><strong>Not present</strong> in daytime option trading
+<ul>
+<li>large literature on jumps in high-frequency returns</li>
+</ul></li>
+<li>Present when trading options around non-trading periods
+<ul>
+<li>but is it mispricing?</li>
+</ul></li>
+<li>Different from the pricing of <strong>variance risk</strong></li>
 </ul>
 </section>
 <section id="conclusions" class="slide level1">
 <h1>Conclusions</h1>
-<h3 id="compensation-for-holding-downside-tail-risk-in-overnight-periods" class="bold">Compensation for holding downside tail risk in overnight periods</h3>
+<h3 id="no-premium-for-jumps-in-high-frequency-data" class="bold cb_purple">No premium for jumps in high frequency data</h3>
 <ul>
-<li>hedging frictions due to illiqudity?</li>
-<li>who is exposed (broker-dealers)?</li>
+<li>… beyond premium for changes in variance swap rates</li>
+<li>result aligns with findings about intraday option returns.</li>
 </ul>
-<h3 id="no-evidence-about-daytime-jump-compensation">No evidence about daytime jump compensation</h3>
+<h3 id="premia-for-skew-positions-over-non-trading-periods" class="bold cb_orange one-em-top">Premia for skew positions over non-trading periods</h3>
 <ul>
-<li>high variance of estimates</li>
-<li>small significant profits in robust analysis.</li>
+<li>overnight: skew (but no variance) premia
+<ul>
+<li>not spanned by known factors</li>
+</ul></li>
+<li>holidays / weekends: variance (but no skew) premia</li>
+<li>premium for inability to hedge?
+<ul>
+<li>mispricing?
+<ul>
+<li>hedging</li>
+<li>predictability</li>
+</ul></li>
+</ul></li>
 </ul>
+<h3 id="path-forward-for-us-and-for-models" class="bold cb_dark_blue one-em-top">Path forward for us and for models?</h3>
+<ul>
+<li>demand/supply shock impact on the option market
+<ul>
+<li>disentangle effects of mispricing</li>
+</ul></li>
+<li>differentiate between trading and non-trading periods,</li>
+</ul>
+</section>
+<section id="interpreting-the-jump-skew-premium-details" class="slide level1">
+<h1>Interpreting the jump skew premium – details</h1>
+<h3 id="semi-static-strategies-e.g.variance-swaps" class="bold cb_purple">Semi-static strategies (e.g. variance swaps):</h3>
+<ul>
+<li>floating leg — realized variation measure <span class="math inline">\(\equiv\)</span> fwd + option settlement,</li>
+<li>fixed leg — <span class="cb_purple">swap rate</span> — <span class="math inline">\(\mathbb{E}^{\mathbb{Q}_T}_t[\phi(F_T) - \phi(F_t)]\)</span>.</li>
+</ul>
+<h3 id="dynamic-strategies" class="bold cb_green">Dynamic strategies:</h3>
+<ul>
+<li>replicating leg — two components
+<ul>
+<li>static skew swap rate (as if there was no extra hedging)</li>
+<li><span style="color: green">weight <span style="font-weight: bold">integrated</span> wrt <span class="math inline">\(\Delta\)</span> SR </span>, <span class="math inline">\(\int_t^T \color{orange} \gamma_s \color{black} d \color{blue}\mathbb{E}^{\mathbb{Q}_T}_s[\phi(F_T) - \phi(F_s)]\)</span>,</li>
+</ul></li>
+</ul>
+<h3 id="with-mgf-of-log-return-varphi_tptau--t-equiv-mathbbe_tmathbbqleft-eplogf_tauf_t-right" class="bold cb_dark_orange">With MGF of log-return <span class="math inline">\(\varphi_t(p,\tau- t) \equiv \mathbb{E}_t^{\mathbb{Q}}\left[ e^{p\log{F_{\tau}/F_t}} \right]\)</span></h3>
+<p><span class="math display">\[
+  \mathbb{E}^{\mathbb{P}}_t[S_{t,T}] - \left[\underbrace{-\frac{1}{2}\varphi&#39;&#39;_t(0,T - t) - \varphi&#39;_t(0, T - t)}_{\color{green}{\bigstar}} - \underbrace{\int_t^{T} \color{orange}\log{\frac{F_s}{F_t}}\color{black} d \color{blue} \varphi&#39;_s(0,T - s)}_{\color{purple}{\bigstar}}\right]
+\]</span></p>
+<p>Hedging exposure to jump skewness exposes trader to <span class="cb_blue">volatility price</span> <span class="cb_orange"><strong>drivers</strong></span>.</p>
+<div style="display: inline-block; float: right">
+<p style="background-color: #56B4E9">
+<a href="#//jump-skew-premium">back</a>
+</p>
+</div>
+</section>
+<section id="profits-from-trading-return-variance" class="slide level1">
+<h1>Profits from trading return variance</h1>
+<p><img src="fma-derivs-2019-30min_files/figure-revealjs/var-time-series-plots-1.png" width="864" style="display: block; margin: auto;" /></p>
+<div style="display: inline-block; float: right">
+<p style="background-color: #56B4E9">
+<a href="#//profits-from-trading-return-skew">back</a>
+</p>
+</div>
 </section>
 <section id="spanning-of-variance-profits" class="slide level1">
 <h1>Spanning of variance profits</h1>
+<div id="centered-table">
 <table style="border-collapse:collapse; border:none;">
 <tr>
 <th style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm;  text-align:left; ">
@@ -1778,16 +1798,16 @@ Estimates
 <span class="math inline">\(\alpha\)</span>
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
-7.94 <sup>*</sup>
+0.08 <sup>*</sup>
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
-6.94 <sup>*</sup>
+0.07 <sup>*</sup>
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
-46.95 <sup>***</sup>
+0.47 <sup>***</sup>
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
-47.55 <sup>***</sup>
+0.48 <sup>***</sup>
 </td>
 </tr>
 <tr>
@@ -1795,16 +1815,16 @@ Estimates
 <span class="math inline">\(r_{mt}\)</span>
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
-64.53 <sup>***</sup>
+0.65 <sup>***</sup>
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
-29.36 <sup></sup>
+0.29 <sup></sup>
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
-80.52 <sup>***</sup>
+0.81 <sup>***</sup>
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
-62.19 <sup>**</sup>
+0.62 <sup>**</sup>
 </td>
 </tr>
 <tr>
@@ -1814,12 +1834,12 @@ Estimates
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
-30.53 <sup>*</sup>
+0.31 <sup>*</sup>
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
 </td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">
-14.16 <sup></sup>
+0.14 <sup></sup>
 </td>
 </tr>
 <tr>
@@ -1864,30 +1884,111 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </tr></li>
 </ul>
 </table>
+</div>
+<div style="display: inline-block; float: right">
+<p style="background-color: #56B4E9">
+<a href="#//spanning-by-known-risk-factors-raw-profits">back to skew</a>
+</p>
+</div>
+</section>
+<section id="capital-requirements" class="slide level1">
+<h1>Capital requirements</h1>
+<h3 id="realized-jump-skew-is-two-orders-of-magnitude-smaller-than-realized-variance" class="bold cb_orange">Realized jump skew is two orders of magnitude smaller than realized variance</h3>
+<h3 id="bring-swap-rates-to-common-magnitude-check-margin-requirements" class="bold cb_purple top one-em-top">Bring swap rates to common magnitude, check margin requirements</h3>
+<ul>
+<li>bets on variance / skew of <span class="cb_dark_blue"><strong>return</strong></span> <!-- - variance swap: <span class="cb_dark_orange">**two orders of magnitude**</span> greater --></li>
+<li>compare CBOE <span class="cb_blue"><strong>margin requirements</strong></span> for positions:
+<ul>
+<li>variance of return on <span class="math inline">\(\$10k\)</span> USD</li>
+<li>skewness of return on <span class="math inline">\(\$1m\)</span> USD</li>
+<li>this <strong>does not</strong> mean such big total option notionals</li>
+</ul></li>
+</ul>
+<h3 id="skew-swap-margin-requirement-as-fraction-of-vs-margin-requirement" class="bold cb_purple one-em-top">Skew swap margin requirement as fraction of VS margin requirement</h3>
+<div id="centered-table">
+<table>
+<thead>
+<tr>
+<th style="text-align:right;">
+ATM IV quantile
+</th>
+<th style="text-align:right;">
+ATM IV
+</th>
+<th style="text-align:right;">
+relative margin requirement
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+0.15
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+0.50
+</td>
+<td style="text-align:right;">
+0.15
+</td>
+<td style="text-align:right;">
+0.38
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+0.99
+</td>
+<td style="text-align:right;">
+0.52
+</td>
+<td style="text-align:right;">
+0.97
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="display: inline-block; float: right">
+<p style="background-color: #56B4E9">
+<a href="#//profits-from-trading-return-skew">back</a>
+</p>
+</div>
 </section>
 <section id="references" class="slide level1 unnumbered">
 <h1>References</h1>
 <div id="refs" class="references">
 <div id="ref-Andersen2017">
-<p>Andersen, TorbenG., Nicola Fusari, and Viktor Todorov. 2017. “Short-Term Market Risks Implied by Weekly Options.” <em>The Journal of Finance</em> 72 (3): 1335–86. <a href="https://doi.org/10.1111/jofi.12486">https://doi.org/10.1111/jofi.12486</a>.</p>
+<p>Andersen, TorbenG., Nicola Fusari, and Viktor Todorov. 2017. “Short-Term Market Risks Implied by Weekly Options.” <em>The Journal of Finance</em> 72 (3): 1335–86. <a href="https://doi.org/10.1111/jofi.12486" class="uri">https://doi.org/10.1111/jofi.12486</a>.</p>
 </div>
 <div id="ref-Andersen2013">
-<p>Andersen, Torben G., Viktor Todorov, and Nicola Fusari. 2015. “The risk premia embedded in index options.” <em>Journal of Financial Economics</em> 117 (3): 558–84. <a href="https://doi.org/http://dx.doi.org/10.1016/j.jfineco.2015.06.005">https://doi.org/http://dx.doi.org/10.1016/j.jfineco.2015.06.005</a>.</p>
+<p>Andersen, Torben G., Viktor Todorov, and Nicola Fusari. 2015. “The risk premia embedded in index options.” <em>Journal of Financial Economics</em> 117 (3): 558–84. <a href="https://doi.org/http://dx.doi.org/10.1016/j.jfineco.2015.06.005" class="uri">https://doi.org/http://dx.doi.org/10.1016/j.jfineco.2015.06.005</a>.</p>
 </div>
 <div id="ref-arditti1967risk">
-<p>Arditti, Fred D. 1967. “RISK AND THE REQUIRED RETURN ON EQUITY.” <em>The Journal of Finance</em> 22 (1): 19–36. <a href="https://doi.org/10.1111/j.1540-6261.1967.tb01651.x">https://doi.org/10.1111/j.1540-6261.1967.tb01651.x</a>.</p>
+<p>Arditti, Fred D. 1967. “RISK AND THE REQUIRED RETURN ON EQUITY.” <em>The Journal of Finance</em> 22 (1): 19–36. <a href="https://doi.org/10.1111/j.1540-6261.1967.tb01651.x" class="uri">https://doi.org/10.1111/j.1540-6261.1967.tb01651.x</a>.</p>
 </div>
 <div id="ref-barro2006rare">
-<p>Barro, Robert J. 2006. “Rare Disasters and Asset Markets in the Twentieth Century.” <em>The Quarterly Journal of Economics</em> 121 (3): pp. 823–66.</p>
+<p>Barro, Robert J. 2006. “Rare Disasters and Asset Markets in the Twentieth Century.” <em>The Quarterly Journal of Economics</em> 121 (3). Oxford University Press: pp. 823–66.</p>
+</div>
+<div id="ref-Barro2019">
+<p>Barro, Robert J., and Gordon Y. Liao. 2019. “Tractable Rare Disaster Probability and Options-Pricing.” <em>Finance and Economics Discussion Series</em>. <a href="https://doi.org/10.17016/feds.2019.073" class="uri">https://doi.org/10.17016/feds.2019.073</a>.</p>
 </div>
 <div id="ref-barro2008macroeconomic">
-<p>Barro, Robert J, and Jose F Ursúa. 2008. “Macroeconomic Crises since 1870.” <em>Brookings Papers on Economic Activity</em> 39 (1 (Spring): 255–350. <a href="https://ideas.repec.org/a/bin/bpeajo/v39y2008i2008-01p255-350.html">https://ideas.repec.org/a/bin/bpeajo/v39y2008i2008-01p255-350.html</a>.</p>
+<p>Barro, Robert J, and Jose F Ursúa. 2008. “Macroeconomic Crises since 1870.” <em>Brookings Papers on Economic Activity</em> 39 (1 (Spring): 255–350. <a href="https://ideas.repec.org/a/bin/bpeajo/v39y2008i2008-01p255-350.html" class="uri">https://ideas.repec.org/a/bin/bpeajo/v39y2008i2008-01p255-350.html</a>.</p>
 </div>
 <div id="ref-Bollerslev2016">
-<p>Bollerslev, Tim, Sophia Zhengzi Li, and Viktor Todorov. 2016. “Roughing up beta: Continuous versus discontinuous betas and the cross section of expected stock returns.” <em>Journal of Financial Economics</em> 120 (3): 464–90. <a href="https://doi.org/10.1016/j.jfineco.2016.02.001">https://doi.org/10.1016/j.jfineco.2016.02.001</a>.</p>
+<p>Bollerslev, Tim, Sophia Zhengzi Li, and Viktor Todorov. 2016. “Roughing up beta: Continuous versus discontinuous betas and the cross section of expected stock returns.” <em>Journal of Financial Economics</em> 120 (3): 464–90. <a href="https://doi.org/10.1016/j.jfineco.2016.02.001" class="uri">https://doi.org/10.1016/j.jfineco.2016.02.001</a>.</p>
 </div>
 <div id="ref-Bollerslev2014time">
-<p>Bollerslev, Tim, and Viktor Todorov. 2014. “Time-varying jump tails.” <em>Journal of Econometrics</em> 183 (2): 168–80. <a href="https://doi.org/http://dx.doi.org/10.1016/j.jeconom.2014.05.007">https://doi.org/http://dx.doi.org/10.1016/j.jeconom.2014.05.007</a>.</p>
+<p>Bollerslev, Tim, and Viktor Todorov. 2014. “Time-varying jump tails.” <em>Journal of Econometrics</em> 183 (2): 168–80. <a href="https://doi.org/http://dx.doi.org/10.1016/j.jeconom.2014.05.007" class="uri">https://doi.org/http://dx.doi.org/10.1016/j.jeconom.2014.05.007</a>.</p>
 </div>
 <div id="ref-bollerslev2015tail">
 <p>Bollerslev, Tim, Viktor Todorov, and Lai Xu. 2015. “Tail risk premia and return predictability.” <em>Journal of Financial Economics</em> 118 (1): 113–34.</p>
@@ -1896,25 +1997,28 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 <p>Breeden, Douglas T, and Robert H Litzenberger. 1978. “Prices of State-contingent Claims Implicit in Option Prices.” <em>The Journal of Bussiness</em> 51 (4): 621–51.</p>
 </div>
 <div id="ref-Carr2001b">
-<p>Carr, P., and D. Madan. 2001. “Optimal Positioning in Derivative Securities.” <em>Quantitative Finance</em> 1 (1): 19–37. <a href="https://doi.org/10.1080/713665549">https://doi.org/10.1080/713665549</a>.</p>
+<p>Carr, P., and D. Madan. 2001. “Optimal Positioning in Derivative Securities.” <em>Quantitative Finance</em> 1 (1): 19–37. <a href="https://doi.org/10.1080/713665549" class="uri">https://doi.org/10.1080/713665549</a>.</p>
+</div>
+<div id="ref-drechsler2013uncertainty">
+<p>Drechsler, Itamar. 2013. “Uncertainty, Time-Varying Fear, and Asset Prices.” <em>The Journal of Finance</em> 68 (5): 1843–89. <a href="https://doi.org/10.1111/jofi.12068" class="uri">https://doi.org/10.1111/jofi.12068</a>.</p>
 </div>
 <div id="ref-Garleanu2009">
-<p>Gârleanu, Nicolae, Lasse Heje Pedersen, and Allen M. Poteshman. 2009. “Demand-Based Option Pricing.” <em>Review of Financial Studies</em> 22 (10): 4259–99. <a href="https://doi.org/10.1093/rfs/hhp005">https://doi.org/10.1093/rfs/hhp005</a>.</p>
+<p>Gârleanu, Nicolae, Lasse Heje Pedersen, and Allen M. Poteshman. 2009. “Demand-Based Option Pricing.” <em>Review of Financial Studies</em> 22 (10): 4259–99. <a href="https://doi.org/10.1093/rfs/hhp005" class="uri">https://doi.org/10.1093/rfs/hhp005</a>.</p>
 </div>
 <div id="ref-harvey2002skewness">
-<p>Harvey, Campbell R, and Akhtar Siddique. 2002. “Conditional Skewness in Asset Pricing Tests.” <em>The Journal of Finance</em> 55 (3): 1263–95. <a href="https://doi.org/10.1111/0022-1082.00247">https://doi.org/10.1111/0022-1082.00247</a>.</p>
+<p>Harvey, Campbell R, and Akhtar Siddique. 2002. “Conditional Skewness in Asset Pricing Tests.” <em>The Journal of Finance</em> 55 (3): 1263–95. <a href="https://doi.org/10.1111/0022-1082.00247" class="uri">https://doi.org/10.1111/0022-1082.00247</a>.</p>
 </div>
 <div id="ref-He2017">
-<p>He, Zhiguo, Bryan Kelly, and Asaf Manela. 2017. “Intermediary Asset Pricing: New Evidence from Many Asset Classes.” <em>Journal of Financial Economics</em> 126 (1): 1–35. <a href="https://doi.org/10.1016/j.jfineco.2017.08.002">https://doi.org/10.1016/j.jfineco.2017.08.002</a>.</p>
+<p>He, Zhiguo, Bryan Kelly, and Asaf Manela. 2017. “Intermediary Asset Pricing: New Evidence from Many Asset Classes.” <em>Journal of Financial Economics</em> 126 (1): 1–35. <a href="https://doi.org/10.1016/j.jfineco.2017.08.002" class="uri">https://doi.org/10.1016/j.jfineco.2017.08.002</a>.</p>
 </div>
 <div id="ref-itakura1968analysis">
 <p>Itakura, F, and S Saito. 1968. “Analysis synthesis telephony based on the maximum likelihood method.” In <em>Proceedings of the 6th International Congress on Acoustics</em>, 17:C17–C20. IEEE.</p>
 </div>
 <div id="ref-Jones2018">
-<p>Jones, Christopher S., and Joshua Shemesh. 2018. “Option Mispricing around Nontrading Periods.” <em>Journal of Finance</em>. <a href="https://doi.org/10.1111/jofi.12603">https://doi.org/10.1111/jofi.12603</a>.</p>
+<p>Jones, Christopher S., and Joshua Shemesh. 2018. “Option Mispricing around Nontrading Periods.” <em>Journal of Finance</em>. <a href="https://doi.org/10.1111/jofi.12603" class="uri">https://doi.org/10.1111/jofi.12603</a>.</p>
 </div>
 <div id="ref-Kelly2014">
-<p>Kelly, Bryan, and Hao Jiang. 2014. “Tail risk and asset prices.” <em>Review of Financial Studies</em> 27 (10): 2841–71. <a href="https://doi.org/10.1093/rfs/hhu039">https://doi.org/10.1093/rfs/hhu039</a>.</p>
+<p>Kelly, Bryan, and Hao Jiang. 2014. “Tail risk and asset prices.” <em>Review of Financial Studies</em> 27 (10): 2841–71. <a href="https://doi.org/10.1093/rfs/hhu039" class="uri">https://doi.org/10.1093/rfs/hhu039</a>.</p>
 </div>
 <div id="ref-khajavi2015realized">
 <p>Khajavi, Ali Noori. 2017. “The econometrics of realized divergence.” PhD thesis, Università Bocconi.</p>
@@ -1923,19 +2027,19 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 <p>Kraus, Alan, and Robert H Litzenberger. 1976. “Skewness Preference and the Valuation of Risk Assets.” <em>Journal of Finance</em> 31 (4): 1085–1100.</p>
 </div>
 <div id="ref-Merton1976">
-<p>Merton, Robert C. 1976. “Option pricing when underlying stock returns are discontinuous.” <em>Journal of Financial Economics</em> 3 (1-2): 125–44. <a href="https://doi.org/10.1016/0304-405X(76)90022-2">https://doi.org/10.1016/0304-405X(76)90022-2</a>.</p>
+<p>Merton, Robert C. 1976. “Option pricing when underlying stock returns are discontinuous.” <em>Journal of Financial Economics</em> 3 (1-2): 125–44. <a href="https://doi.org/10.1016/0304-405X(76)90022-2" class="uri">https://doi.org/10.1016/0304-405X(76)90022-2</a>.</p>
 </div>
 <div id="ref-Muravyev2016">
-<p>Muravyev, Dmitriy, and Xuechuan (Charles) Ni. 2019. “Why do option returns change sign from day to night?” SSRN Scholarly Paper. <em>Journal of Financial Economics</em>, no. ID 2820264 (September). <a href="https://doi.org/10.1016/j.jfineco.2018.12.006">https://doi.org/10.1016/j.jfineco.2018.12.006</a>.</p>
+<p>Muravyev, Dmitriy, and Xuechuan (Charles) Ni. 2019. “Why do option returns change sign from day to night?” SSRN Scholarly Paper. <em>Journal of Financial Economics</em>, no. ID 2820264 (September). Rochester, NY: Social Science Research Network. <a href="https://doi.org/10.1016/j.jfineco.2018.12.006" class="uri">https://doi.org/10.1016/j.jfineco.2018.12.006</a>.</p>
 </div>
 <div id="ref-Muravyev2015">
-<p>Muravyev, Dmitriy, and Neil D. Pearson. 2015. “Option Trading Costs Are Lower than You Think.” <em>SSRN Electronic Journal</em>. <a href="https://doi.org/10.2139/ssrn.2580548">https://doi.org/10.2139/ssrn.2580548</a>.</p>
+<p>Muravyev, Dmitriy, and Neil D. Pearson. 2015. “Option Trading Costs Are Lower than You Think.” <em>SSRN Electronic Journal</em>. <a href="https://doi.org/10.2139/ssrn.2580548" class="uri">https://doi.org/10.2139/ssrn.2580548</a>.</p>
 </div>
 <div id="ref-Schneider2015">
-<p>Schneider, Paul, and Fabio Trojani. 2019. “Divergence and the Price of Uncertainty.” <em>Journal of Financial Econometrics</em> 17 (3): 341–96. <a href="https://doi.org/10.1093/jjfinec/nby021">https://doi.org/10.1093/jjfinec/nby021</a>.</p>
+<p>Schneider, Paul, and Fabio Trojani. 2019. “Divergence and the Price of Uncertainty.” <em>Journal of Financial Econometrics</em> 17 (3): 341–96. <a href="https://doi.org/10.1093/jjfinec/nby021" class="uri">https://doi.org/10.1093/jjfinec/nby021</a>.</p>
 </div>
 <div id="ref-Schneider2016a">
-<p>Schneider, Paul, Christian Wagner, and Josef Zechner. 2016. “Low Risk Anomalies?” <em>SSRN Electronic Journal</em>. <a href="https://doi.org/10.2139/ssrn.2858933">https://doi.org/10.2139/ssrn.2858933</a>.</p>
+<p>Schneider, Paul, Christian Wagner, and Josef Zechner. 2016. “Low Risk Anomalies?” <em>SSRN Electronic Journal</em>. <a href="https://doi.org/10.2139/ssrn.2858933" class="uri">https://doi.org/10.2139/ssrn.2858933</a>.</p>
 </div>
 <div id="ref-schreindorfer2014tails">
 <p>Schreindorfer, David. 2014. “Tails, Fears, and Equilibrium Option Prices.” Available at SSRN: https://ssrn.com/abstract=2358157.</p>
@@ -1944,7 +2048,7 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 <p>Segal, Gill, Ivan Shaliastovich, and Amir Yaron. 2015. “Good and bad uncertainty: Macroeconomic and financial market implications.” <em>Journal of Financial Economics</em> 117 (2): 369–97.</p>
 </div>
 <div id="ref-tsai2016rare">
-<p>Tsai, Jerry, and Jessica A. Wachter. 2016. “Rare Booms and Disasters in a Multisector Endowment Economy.” In <em>Review of Financial Studies</em>, 29:1113–69. 5. <a href="https://doi.org/10.1093/rfs/hhv074">https://doi.org/10.1093/rfs/hhv074</a>.</p>
+<p>Tsai, Jerry, and Jessica A. Wachter. 2016. “Rare Booms and Disasters in a Multisector Endowment Economy.” In <em>Review of Financial Studies</em>, 29:1113–69. 5. <a href="https://doi.org/10.1093/rfs/hhv074" class="uri">https://doi.org/10.1093/rfs/hhv074</a>.</p>
 </div>
 </div>
 </section>

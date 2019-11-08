@@ -103,12 +103,44 @@ Date: 3/25/2016
   color: green;
 }
 
+.reveal .cb_purple {
+  color: #CC79A7;
+}
+
+.reveal .cb_dark_orange {
+  color: #D55E00;
+}
+
+.reveal .cb_dark_blue {
+  color: #0072B2;
+}
+
+.reveal .cb_yellow {
+  color: #F0E442;
+}
+
+.reveal .cb_green {
+  color: #009E73;
+}
+
+.reveal .cb_blue {
+  color: #56B4E9;
+}
+
+.reveal .cb_orange {
+  color: #E69F00;
+}
+
 .reveal .bold {
   font-weight: bold;
 }
 
 .reveal .emph {
   font-weight: italic;
+}
+
+.reveal .one-em-top{
+  margin-top: 0.7em;
 }
 
 .reveal .fifty-from-top {
